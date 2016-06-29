@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LoadingViewController_Example' do
+  pod 'LoadingViewController', :path => '../'
+
+  target 'LoadingViewController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

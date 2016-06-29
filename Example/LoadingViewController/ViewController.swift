@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import BaseLoadingViewController
 
 class ViewController: UIViewController {
 

@@ -1,0 +1,16 @@
+PODS:
+  - LoadingViewController (0.1.0)
+
+DEPENDENCIES:
+  - LoadingViewController (from `../`)
+
+EXTERNAL SOURCES:
+  LoadingViewController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LoadingViewController: 9c003a064a21fc5877e94b42150fc97ff12847c6
+
+PODFILE CHECKSUM: eb05bc03d0d2629562119d09afc76463475b36a0
+
+COCOAPODS: 1.0.1

@@ -1,0 +1,6 @@
+framework module LoadingViewController {
+  umbrella header "LoadingViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

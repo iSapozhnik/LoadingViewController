@@ -9,8 +9,6 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
-
 ## Installation
 
 LoadingViewController is available through [CocoaPods](http://cocoapods.org). To install
@@ -20,7 +18,7 @@ it, simply add the following line to your Podfile:
 pod "LoadingViewController"
 ```
 
-Currently it supporting UIViewControllers but not UITableViewController and UICollectionViewController. 
+UITableViewController and UICollectionViewController are not supported yet. 
 
 ## How to use
 

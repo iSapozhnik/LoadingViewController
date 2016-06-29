@@ -20,6 +20,31 @@ it, simply add the following line to your Podfile:
 pod "LoadingViewController"
 ```
 
+Currently it supporting UIViewControllers but not UITableViewController and UICollectionViewController. 
+
+## How to use
+
+Subclass your controller from LoadingViewController. On the top of View of your controller put another UIView which will be content view. All your content should be on the top of Content view. Link *contentView* property with this newly created view.
+
+```javascript
+override func viewDidLoad() {
+super.viewDidLoad()
+
+// Do any additional setup after loading the view, typically from a nib.
+
+delay(3.0) { [weak self] in
+self?.setVisibleScreen(.Loading)
+self?.delay(3, closure: { [weak self] in
+self?.setVisibleScreen(.Content)
+})
+}
+}
+```
+
+## TODO
+* add support of UITableViewController and UICollectionViewController
+* implement NoData view, Error view, Empty view
+
 ## Author
 
 Sapozhnik Ivan, sapozhnik.ivan@gmail.com

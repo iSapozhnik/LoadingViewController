@@ -39,7 +39,6 @@ class ErrorView: UIView {
 			let errorView = SimpleErrorView()
 			errorView.action = actionHandler
 			return errorView
-		default: break
 		}
 		
 	}

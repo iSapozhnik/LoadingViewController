@@ -42,7 +42,7 @@ public typealias ActionHandler = () -> ()
 
 public class LoadingViewController: UIViewController {
 
-	@IBOutlet var contentView: UIView!
+	@IBOutlet public var contentView: UIView!
 	
 	var visibleContentType: ContentType = .Undefined
 	var activeView: UIView?

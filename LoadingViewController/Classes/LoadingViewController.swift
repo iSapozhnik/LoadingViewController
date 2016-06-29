@@ -100,7 +100,7 @@ public class LoadingViewController: UIViewController {
 		return true
 	}
 	
-	func addLoadingView(viewToAdd: UIView) {
+	func addView(viewToAdd: UIView) {
 		view.addSubview(viewToAdd)
 		viewToAdd.translatesAutoresizingMaskIntoConstraints = false
 		let bindings = ["view": viewToAdd]
@@ -108,34 +108,6 @@ public class LoadingViewController: UIViewController {
 		view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[view]|", options: [.AlignAllTop, .AlignAllBottom], metrics: nil, views: bindings))
 		view.layoutIfNeeded()
 	}
-	
-	func addErrorView(viewToAdd: UIView) {
-		view.addSubview(viewToAdd)
-		viewToAdd.translatesAutoresizingMaskIntoConstraints = false
-		let bindings = ["view": viewToAdd]
-		view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("|[view]|", options: [.AlignAllLeading, .AlignAllTrailing], metrics: nil, views: bindings))
-		view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[view]|", options: [.AlignAllTop, .AlignAllBottom], metrics: nil, views: bindings))
-		view.layoutIfNeeded()
-	}
-	
-	/*
-	- (void)addErrorView:(UIView *)aView
-	{
-	[self.view addSubview:aView];
-	aView.translatesAutoresizingMaskIntoConstraints = NO;
-	[self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:
-	@"|[aView]|" options:NSLayoutFormatAlignAllTrailing |
-	NSLayoutFormatAlignAllLeading metrics:nil views:
-	NSDictionaryOfVariableBindings(aView)]];
-	[self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:
-	@"V:[aView]|" options:NSLayoutFormatAlignAllBottom metrics:nil
-	views:NSDictionaryOfVariableBindings(aView)]];
-	[self.view addConstraint:[NSLayoutConstraint constraintWithItem:
-	aView attribute:NSLayoutAttributeTop relatedBy:
-	NSLayoutRelationEqual toItem:self.topGuideConstraint attribute:
-	NSLayoutAttributeBottom multiplier:1.0 constant:self.contentInsets.top]];
-	}
-*/
 	
 	func viewForScreen(contentType: ContentType) -> UIView {
 		switch contentType {
@@ -155,14 +127,14 @@ public class LoadingViewController: UIViewController {
 	}
 	
 	// TODO: add ActionHandler support to handle 'Retry' tap on ErrorViews
-	public func setVisibleScreen(contentType: ContentType, actionHandler:ActionHandler? = nil) {
+	public func setVisibleScreen(contentType: ContentType, animated: Bool = true, actionHandler:ActionHandler? = nil) {
 		if visibleContentType != contentType {
 			visibleContentType = contentType
-			setActiveView(viewForScreen(visibleContentType))
+			setActiveView(viewForScreen(visibleContentType), animated: animated)
 		}
 	}
 
-	func setActiveView(viewToSet: UIView, animated: Bool = true) {
+	func setActiveView(viewToSet: UIView, animated: Bool) {
 		if viewToSet != activeView {
 			let oldView = activeView ?? nil
 			activeView = viewToSet
@@ -272,14 +244,7 @@ public class LoadingViewController: UIViewController {
 			startNextAnimationIfNeeded()
 		}
 		
-		switch contentType {
-		case .Loading:
-			addLoadingView(toView)
-		case .Failure:
-			addErrorView(toView)
-		default:
-			break
-		}
+		addView(toView)
 		
 		let theFromView = fromView
 		let fromViewIsContentView = (theFromView == self.contentView)

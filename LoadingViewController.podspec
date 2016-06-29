@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LoadingViewController'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'LoadingViewController is a component for changing controller views: content -> loading -> content or content -> loading -> error.'
 
 # This description is used to generate tags and improve search results.

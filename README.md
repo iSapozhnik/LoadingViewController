@@ -26,7 +26,7 @@ Currently it supporting UIViewControllers but not UITableViewController and UICo
 
 Subclass your controller from LoadingViewController. On the top of View of your controller put another UIView which will be content view. All your content should be on the top of Content view. Link *contentView* property with this newly created view.
 
-```javascript
+```swift
 override func viewDidLoad() {
 super.viewDidLoad()
 

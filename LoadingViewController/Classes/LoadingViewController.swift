@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIViewController {
-	func delay(delay:Double, closure:()->()) {
+	public func delay(delay:Double, closure:()->()) {
 		dispatch_after(
 			dispatch_time(
 				DISPATCH_TIME_NOW,
@@ -36,7 +36,7 @@ enum ErrorViewStyle {
 	case Simple
 }
 
-enum ContentType: Int {
+public enum ContentType: Int {
 	case Undefined = 0
 	case Empty
 	case NoData
@@ -54,7 +54,7 @@ let animationDuration: NSTimeInterval = 0.3;
 
 typealias AnimationDict = Dictionary<String, AnyObject>
 
-class LoadingViewController: UIViewController {
+public class LoadingViewController: UIViewController {
 
 	@IBOutlet var contentView: UIView!
 	
@@ -73,12 +73,6 @@ class LoadingViewController: UIViewController {
 	var moDataMessage: String = NSLocalizedString("No data availabel", comment: "")
 
 	var contentViewAllwaysAvailabel: Bool = false
-	
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-	}
 	
 	//MARK:- Default views
 	
@@ -146,7 +140,7 @@ class LoadingViewController: UIViewController {
 		}
 	}
 	
-	func setVisibleScreen(contentType: ContentType) {
+	public func setVisibleScreen(contentType: ContentType) {
 		if visibleContentType != contentType {
 			visibleContentType = contentType
 			setActiveView(viewForScreen(visibleContentType))

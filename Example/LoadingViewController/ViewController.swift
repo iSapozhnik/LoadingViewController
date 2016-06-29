@@ -7,13 +7,21 @@
 //
 
 import UIKit
-import BaseLoadingViewController
+import LoadingViewController
 
-class ViewController: UIViewController {
+class ViewController: LoadingViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+		
         // Do any additional setup after loading the view, typically from a nib.
+		
+		delay(3.0) { [weak self] in
+			self?.setVisibleScreen(.Loading)
+			self?.delay(3, closure: { [weak self] in
+				self?.setVisibleScreen(.Content)
+			})
+		}
     }
 
     override func didReceiveMemoryWarning() {

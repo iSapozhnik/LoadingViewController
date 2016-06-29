@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		0C6D8C82688D88E75106476C1BA126CB /* Pods-LoadingViewController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 222E482D2896EB63D2242F41262E520D /* Pods-LoadingViewController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1F7D4B59E1CE5395D82CF213D289DEF4 /* LoadingViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0941E55BED4B9F51196CC2EE9C393C82 /* LoadingViewController-dummy.m */; };
+		0DBB6D228D434A501E823E3EB6C7B285 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCF0764C3AE95E1BFC00B66A65C62C6 /* LoadingView.swift */; };
+		1D5440CB5B428DDA3883E7FC338C2461 /* LoadingViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0941E55BED4B9F51196CC2EE9C393C82 /* LoadingViewController-dummy.m */; };
+		25D2A03262B57E584AD772E8588E446B /* MulticolorActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B8EAE28482CBE50E7305E69CE22F9F /* MulticolorActivityView.swift */; };
+		28C4987EC3F9630A4E52FF7B8B910326 /* StrokeLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD86757F705FD2BD906D973F9468B6E /* StrokeLoadingView.swift */; };
 		37713EC5C4E3278E5B949D3FBF5CD481 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		3E92D97948E4958F3762AA796987B1EE /* StrokeLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D23F0A857D827C324FBA850577FD27 /* StrokeLoadingView.swift */; };
-		7666D4D3430299B36E24FACA3EFF471A /* MulticolorActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A3B605C66FAABB553CEDB19D58902 /* MulticolorActivityView.swift */; };
+		7535612E54395FDC569BDDBC54608B19 /* MulticolorLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB23D027ACF44AB3A67753DA8D22B52 /* MulticolorLoadingView.swift */; };
 		7F5D6542308D2E17E80B01F0DBD62DFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		92B94041642BC4A3720BB3C319FEEBAE /* Pods-LoadingViewController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD521050F277A67C9FF37224F11F3C3 /* Pods-LoadingViewController_Tests-dummy.m */; };
-		95CF48BBCA5B4A09F14BE2A7E7A2B228 /* BaseLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E900644531A5192E95C92161835B698 /* BaseLoadingViewController.swift */; };
 		A2607FB1396B49A558B94EEFF9FFF314 /* LoadingViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE2AB2A0C5AB6FC6733D7A642BC98029 /* LoadingViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6CCF3EEACC09797F291AD457B3640C6 /* Pods-LoadingViewController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE13D1A5AD22F44E60CD6E0508316A40 /* Pods-LoadingViewController_Example-dummy.m */; };
-		AF2289A5C777402FA26BCB93A0D1B4BB /* StrokeActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9153093F2113829B2AB8152E24CBF4A /* StrokeActivityView.swift */; };
+		B68B0CFB3839472B9A92CFB0297B0211 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C852596337665DDEBFD4647207718F5 /* LoadingViewController.swift */; };
 		C3674FD64F5524D61CBA821CB35E94F6 /* Pods-LoadingViewController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AFC8BFE73BCE632CB8EB14FB846E0F7 /* Pods-LoadingViewController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CCA41ACFC2B485F3316314862AA86960 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3538F769EA34ABC56BE034DFC9C00967 /* LoadingView.swift */; };
-		D00097A48D9013ECA18FC1B4E3FCF258 /* IndicatorLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B5CF91913C07F6F150B2F6BAED3380 /* IndicatorLoadingView.swift */; };
-		D02EA354268636D8705BE0CF7017BE2A /* MulticolorLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C288FA1813B139654E9A1F040ED41F /* MulticolorLoadingView.swift */; };
+		CC3BA2D518A1B3763F29305741B86B8C /* StrokeActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337C861A3FE5CF9B04BE6544DB37FCB1 /* StrokeActivityView.swift */; };
+		D8C36FC5A65210875489E08A5C9E2312 /* IndicatorLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BCA0378EAFB6893663A19DAFC60AE1 /* IndicatorLoadingView.swift */; };
 		EFDA33F2CCFA25012F9A59467B955531 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,29 +38,29 @@
 /* Begin PBXFileReference section */
 		0941E55BED4B9F51196CC2EE9C393C82 /* LoadingViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LoadingViewController-dummy.m"; sourceTree = "<group>"; };
 		1C3AF1D57A7BE88BD5E1D36C73C77D00 /* Pods-LoadingViewController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LoadingViewController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		1FCF0764C3AE95E1BFC00B66A65C62C6 /* LoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		222E482D2896EB63D2242F41262E520D /* Pods-LoadingViewController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LoadingViewController_Tests-umbrella.h"; sourceTree = "<group>"; };
 		26978DB3ACA52C4508C9ED29EDB271C3 /* Pods_LoadingViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoadingViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E2B9FD74AB2578DE574BF3EAA58A76 /* Pods-LoadingViewController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LoadingViewController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2C753B9BCD67D518723C3302EC1629EF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C852596337665DDEBFD4647207718F5 /* LoadingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		2ED29E7250231EAB04ECA6FE2F8BFF96 /* Pods-LoadingViewController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LoadingViewController_Tests-resources.sh"; sourceTree = "<group>"; };
 		2F00DB692B89732AA9F3D40910DA12EA /* Pods-LoadingViewController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LoadingViewController_Example-frameworks.sh"; sourceTree = "<group>"; };
 		3246E691CFE565A603647C3AB5DC2521 /* LoadingViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LoadingViewController.xcconfig; sourceTree = "<group>"; };
-		3538F769EA34ABC56BE034DFC9C00967 /* LoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
-		3E900644531A5192E95C92161835B698 /* BaseLoadingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseLoadingViewController.swift; sourceTree = "<group>"; };
-		51C288FA1813B139654E9A1F040ED41F /* MulticolorLoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MulticolorLoadingView.swift; sourceTree = "<group>"; };
+		337C861A3FE5CF9B04BE6544DB37FCB1 /* StrokeActivityView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StrokeActivityView.swift; sourceTree = "<group>"; };
+		4DB23D027ACF44AB3A67753DA8D22B52 /* MulticolorLoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MulticolorLoadingView.swift; sourceTree = "<group>"; };
 		609350BC0B6272C4DE6DEC81A9273EFB /* Pods-LoadingViewController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LoadingViewController_Tests.modulemap"; sourceTree = "<group>"; };
 		623D1789D70A9D831E82607157F7F291 /* Pods-LoadingViewController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LoadingViewController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		67D23F0A857D827C324FBA850577FD27 /* StrokeLoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StrokeLoadingView.swift; sourceTree = "<group>"; };
 		6AFC8BFE73BCE632CB8EB14FB846E0F7 /* Pods-LoadingViewController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LoadingViewController_Example-umbrella.h"; sourceTree = "<group>"; };
 		7CDE8291FA4FAA2FC02794DA0C6861B3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D585A6C2901833F989EB81F2ACB80DF /* Pods-LoadingViewController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LoadingViewController_Example-resources.sh"; sourceTree = "<group>"; };
 		7EB247D8DEE2F40723B7824094A76B8C /* Pods-LoadingViewController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LoadingViewController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		884A3B605C66FAABB553CEDB19D58902 /* MulticolorActivityView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MulticolorActivityView.swift; sourceTree = "<group>"; };
+		7FD86757F705FD2BD906D973F9468B6E /* StrokeLoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StrokeLoadingView.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93B5CF91913C07F6F150B2F6BAED3380 /* IndicatorLoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IndicatorLoadingView.swift; sourceTree = "<group>"; };
 		A66C9A39ED8570BFC0C813BC89A35E6B /* Pods-LoadingViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoadingViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BA2B244FCB43409DCB8E00DD25BB2388 /* Pods-LoadingViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoadingViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BEFB42B5E1E552D6DB8799D8C02554FF /* Pods-LoadingViewController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LoadingViewController_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		C2BCA0378EAFB6893663A19DAFC60AE1 /* IndicatorLoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IndicatorLoadingView.swift; sourceTree = "<group>"; };
 		CBD521050F277A67C9FF37224F11F3C3 /* Pods-LoadingViewController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LoadingViewController_Tests-dummy.m"; sourceTree = "<group>"; };
 		CE13D1A5AD22F44E60CD6E0508316A40 /* Pods-LoadingViewController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LoadingViewController_Example-dummy.m"; sourceTree = "<group>"; };
 		CE2AB2A0C5AB6FC6733D7A642BC98029 /* LoadingViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LoadingViewController-umbrella.h"; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 		EA38A696050FB715C6AF667140B18AB5 /* LoadingViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadingViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE34DF3E29B19B746F9B835F45469014 /* LoadingViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LoadingViewController-prefix.pch"; sourceTree = "<group>"; };
 		F128EF8F3ED1C684011A1CC7AE11A153 /* Pods_LoadingViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoadingViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9153093F2113829B2AB8152E24CBF4A /* StrokeActivityView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StrokeActivityView.swift; sourceTree = "<group>"; };
+		F5B8EAE28482CBE50E7305E69CE22F9F /* MulticolorActivityView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MulticolorActivityView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,15 +104,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1FCD309C87FC3EC8AAA46C799A502EFE /* ActivityViews */ = {
-			isa = PBXGroup;
-			children = (
-				884A3B605C66FAABB553CEDB19D58902 /* MulticolorActivityView.swift */,
-				F9153093F2113829B2AB8152E24CBF4A /* StrokeActivityView.swift */,
-			);
-			path = ActivityViews;
-			sourceTree = "<group>";
-		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +139,27 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
+		77DF5F59E48EDC194E994C0DD6156B6C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2C852596337665DDEBFD4647207718F5 /* LoadingViewController.swift */,
+				AC8DFDAA076DAC3F2BF1AF94D7E6FB22 /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		793D1E05EE0D4FC1C0D9DD89A606FEB7 /* LoadingViews */ = {
+			isa = PBXGroup;
+			children = (
+				C2BCA0378EAFB6893663A19DAFC60AE1 /* IndicatorLoadingView.swift */,
+				1FCF0764C3AE95E1BFC00B66A65C62C6 /* LoadingView.swift */,
+				4DB23D027ACF44AB3A67753DA8D22B52 /* MulticolorLoadingView.swift */,
+				7FD86757F705FD2BD906D973F9468B6E /* StrokeLoadingView.swift */,
+				C61D67A94A0FC9B79709EBF02B80995A /* ActivityViews */,
+			);
+			path = LoadingViews;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +189,14 @@
 			path = "Target Support Files/Pods-LoadingViewController_Tests";
 			sourceTree = "<group>";
 		};
+		AC8DFDAA076DAC3F2BF1AF94D7E6FB22 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				793D1E05EE0D4FC1C0D9DD89A606FEB7 /* LoadingViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,30 +208,18 @@
 		C22846587DB78A162296C3F5A2B570A7 /* LoadingViewController */ = {
 			isa = PBXGroup;
 			children = (
-				CBC97DAE0891DB0A20A372DFA0F4C532 /* Classes */,
+				77DF5F59E48EDC194E994C0DD6156B6C /* Classes */,
 			);
 			path = LoadingViewController;
 			sourceTree = "<group>";
 		};
-		C819C5D10532D6163A441D0CCD38E84D /* LoadingViews */ = {
+		C61D67A94A0FC9B79709EBF02B80995A /* ActivityViews */ = {
 			isa = PBXGroup;
 			children = (
-				93B5CF91913C07F6F150B2F6BAED3380 /* IndicatorLoadingView.swift */,
-				3538F769EA34ABC56BE034DFC9C00967 /* LoadingView.swift */,
-				51C288FA1813B139654E9A1F040ED41F /* MulticolorLoadingView.swift */,
-				67D23F0A857D827C324FBA850577FD27 /* StrokeLoadingView.swift */,
-				1FCD309C87FC3EC8AAA46C799A502EFE /* ActivityViews */,
+				F5B8EAE28482CBE50E7305E69CE22F9F /* MulticolorActivityView.swift */,
+				337C861A3FE5CF9B04BE6544DB37FCB1 /* StrokeActivityView.swift */,
 			);
-			path = LoadingViews;
-			sourceTree = "<group>";
-		};
-		CBC97DAE0891DB0A20A372DFA0F4C532 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				3E900644531A5192E95C92161835B698 /* BaseLoadingViewController.swift */,
-				EF0829B1B279EBDE2D21E3853C2EC79E /* Views */,
-			);
-			path = Classes;
+			path = ActivityViews;
 			sourceTree = "<group>";
 		};
 		D20786C22ECA40D1F84B1C1896446A45 /* Support Files */ = {
@@ -236,14 +244,6 @@
 			);
 			name = LoadingViewController;
 			path = ../..;
-			sourceTree = "<group>";
-		};
-		EF0829B1B279EBDE2D21E3853C2EC79E /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				C819C5D10532D6163A441D0CCD38E84D /* LoadingViews */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		FDEC7C5991F0A68CA128C44E1B7A7DE6 /* Pods-LoadingViewController_Example */ = {
@@ -333,7 +333,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCAE6942A09888C309613A05F9926852 /* Build configuration list for PBXNativeTarget "LoadingViewController" */;
 			buildPhases = (
-				DD4428E6DBAEF77C9B1A49BA7FDADBCE /* Sources */,
+				078AE1C48847678FC39FAAF2A839AB89 /* Sources */,
 				D80E6C94932A64B3493C2D81DE32A7DB /* Frameworks */,
 				F08E5C5FDEB39B865CB597AFE6AFF619 /* Headers */,
 			);
@@ -375,6 +375,21 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		078AE1C48847678FC39FAAF2A839AB89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C36FC5A65210875489E08A5C9E2312 /* IndicatorLoadingView.swift in Sources */,
+				0DBB6D228D434A501E823E3EB6C7B285 /* LoadingView.swift in Sources */,
+				1D5440CB5B428DDA3883E7FC338C2461 /* LoadingViewController-dummy.m in Sources */,
+				B68B0CFB3839472B9A92CFB0297B0211 /* LoadingViewController.swift in Sources */,
+				25D2A03262B57E584AD772E8588E446B /* MulticolorActivityView.swift in Sources */,
+				7535612E54395FDC569BDDBC54608B19 /* MulticolorLoadingView.swift in Sources */,
+				CC3BA2D518A1B3763F29305741B86B8C /* StrokeActivityView.swift in Sources */,
+				28C4987EC3F9630A4E52FF7B8B910326 /* StrokeLoadingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		628196322D73F2CEEDEF59447957FD43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -388,21 +403,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				92B94041642BC4A3720BB3C319FEEBAE /* Pods-LoadingViewController_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DD4428E6DBAEF77C9B1A49BA7FDADBCE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				95CF48BBCA5B4A09F14BE2A7E7A2B228 /* BaseLoadingViewController.swift in Sources */,
-				D00097A48D9013ECA18FC1B4E3FCF258 /* IndicatorLoadingView.swift in Sources */,
-				CCA41ACFC2B485F3316314862AA86960 /* LoadingView.swift in Sources */,
-				1F7D4B59E1CE5395D82CF213D289DEF4 /* LoadingViewController-dummy.m in Sources */,
-				7666D4D3430299B36E24FACA3EFF471A /* MulticolorActivityView.swift in Sources */,
-				D02EA354268636D8705BE0CF7017BE2A /* MulticolorLoadingView.swift in Sources */,
-				AF2289A5C777402FA26BCB93A0D1B4BB /* StrokeActivityView.swift in Sources */,
-				3E92D97948E4958F3762AA796987B1EE /* StrokeLoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

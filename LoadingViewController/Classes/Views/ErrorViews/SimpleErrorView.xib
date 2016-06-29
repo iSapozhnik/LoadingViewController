@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
@@ -14,20 +15,20 @@
                     <rect key="frame" x="50" y="0.0" width="220" height="480"/>
                     <subviews>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Oops! Something went wrong." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="220" translatesAutoresizingMaskIntoConstraints="NO" id="gfN-0e-n0e">
-                            <rect key="frame" x="0.0" y="333" width="220" height="38"/>
+                            <rect key="frame" x="0.0" y="221" width="220" height="38"/>
                             <color key="backgroundColor" red="0.40784313729999999" green="0.41568627450000001" blue="0.50980392159999999" alpha="0.0" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
                             <color key="textColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFX-MB-E6F" userLabel="message label">
-                            <rect key="frame" x="0.0" y="391" width="220" height="19"/>
+                            <rect key="frame" x="0.0" y="279" width="220" height="19"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                             <color key="textColor" red="0.40000000000000002" green="0.41176470590000003" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNq-j4-dgH">
-                            <rect key="frame" x="20" y="430" width="180" height="30"/>
+                            <rect key="frame" x="20" y="318" width="180" height="30"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
                             <state key="normal" title="Reload in a moment">
                                 <color key="titleColor" red="0.13725490200000001" green="0.66666666669999997" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -37,8 +38,8 @@
                                 <color key="titleColor" red="0.24313725489999999" green="0.42352941179999998" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                         </button>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="doc_fail.png" translatesAutoresizingMaskIntoConstraints="NO" id="pyy-8x-tJd">
-                            <rect key="frame" x="-210" y="64" width="640" height="240"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="250" image="sad.png" translatesAutoresizingMaskIntoConstraints="NO" id="pyy-8x-tJd">
+                            <rect key="frame" x="46" y="64" width="128" height="128"/>
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -72,6 +73,6 @@
         </view>
     </objects>
     <resources>
-        <image name="doc_fail.png" width="640" height="530"/>
+        <image name="sad.png" width="128" height="128"/>
     </resources>
 </document>

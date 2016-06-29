@@ -36,7 +36,7 @@ class ErrorView: UIView {
 		
 		switch style {
 		case .Simple:
-			let errorView = SimpleErrorView.fromNib()
+			let errorView = SimpleErrorView()
 			errorView.action = actionHandler
 			return errorView
 		default: break

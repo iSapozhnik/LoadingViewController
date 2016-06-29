@@ -18,5 +18,10 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "LoadingViewController/Classes/**/*"
+  "source_files": "LoadingViewController/Classes/**/*",
+  "resource_bundles": {
+    "LoadingViewController": [
+      "LoadingViewController/Assets/*"
+    ]
+  }
 }

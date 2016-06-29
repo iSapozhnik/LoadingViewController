@@ -8,24 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		0C6D8C82688D88E75106476C1BA126CB /* Pods-LoadingViewController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 222E482D2896EB63D2242F41262E520D /* Pods-LoadingViewController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0DBB6D228D434A501E823E3EB6C7B285 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCF0764C3AE95E1BFC00B66A65C62C6 /* LoadingView.swift */; };
-		1D5440CB5B428DDA3883E7FC338C2461 /* LoadingViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0941E55BED4B9F51196CC2EE9C393C82 /* LoadingViewController-dummy.m */; };
-		25D2A03262B57E584AD772E8588E446B /* MulticolorActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B8EAE28482CBE50E7305E69CE22F9F /* MulticolorActivityView.swift */; };
-		28C4987EC3F9630A4E52FF7B8B910326 /* StrokeLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD86757F705FD2BD906D973F9468B6E /* StrokeLoadingView.swift */; };
 		37713EC5C4E3278E5B949D3FBF5CD481 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		7535612E54395FDC569BDDBC54608B19 /* MulticolorLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB23D027ACF44AB3A67753DA8D22B52 /* MulticolorLoadingView.swift */; };
-		7F5D6542308D2E17E80B01F0DBD62DFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		3E492C1CC938ED16A2A152D9393A5AE4 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CE79F94C8A047B441ED916C90C9BEF /* ErrorView.swift */; };
+		4CB25BF5534349270EAD28205ABC6ED3 /* StrokeActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9666259ED1210A78D3895A4DD024A5 /* StrokeActivityView.swift */; };
+		5235111B99C3515762C2705154AA8F08 /* IndicatorLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595F6302A477D7BFAFFD526CB09DDBDD /* IndicatorLoadingView.swift */; };
+		5DA6FA7169A5489E62CBCFD3FD95D966 /* LoadingViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D8D4878ACBAB415D11BB49F53331348B /* LoadingViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		623B6E61FE7AE531A476BC7C589D6A52 /* StrokeLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85553BE52F8BF862A717C0A1CD6DF3DF /* StrokeLoadingView.swift */; };
+		626E21C0F0F129218F73599434118AFE /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DFA96C26EF4FA86DDCDB6E47D8290B /* LoadingView.swift */; };
+		66EE1F959FB0A3C8CB303662DC902B5D /* LoadingViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B88C99CB769237921886BBEC9E379EA1 /* LoadingViewController.bundle */; };
 		92B94041642BC4A3720BB3C319FEEBAE /* Pods-LoadingViewController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD521050F277A67C9FF37224F11F3C3 /* Pods-LoadingViewController_Tests-dummy.m */; };
-		A2607FB1396B49A558B94EEFF9FFF314 /* LoadingViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE2AB2A0C5AB6FC6733D7A642BC98029 /* LoadingViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6CCF3EEACC09797F291AD457B3640C6 /* Pods-LoadingViewController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE13D1A5AD22F44E60CD6E0508316A40 /* Pods-LoadingViewController_Example-dummy.m */; };
-		B68B0CFB3839472B9A92CFB0297B0211 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C852596337665DDEBFD4647207718F5 /* LoadingViewController.swift */; };
 		C3674FD64F5524D61CBA821CB35E94F6 /* Pods-LoadingViewController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AFC8BFE73BCE632CB8EB14FB846E0F7 /* Pods-LoadingViewController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC3BA2D518A1B3763F29305741B86B8C /* StrokeActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337C861A3FE5CF9B04BE6544DB37FCB1 /* StrokeActivityView.swift */; };
-		D8C36FC5A65210875489E08A5C9E2312 /* IndicatorLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BCA0378EAFB6893663A19DAFC60AE1 /* IndicatorLoadingView.swift */; };
+		D0A7CA9F741C25A1EC665CA8C753AA94 /* SimpleErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24704AC393C2EAF9B91301812999AA3 /* SimpleErrorView.swift */; };
+		EA0EEF3B73C054F4986557EC19FA0BCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		EA3029200B176F35CF1A5F1EA4B033B3 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E80DC522E21731E7F35E027E7D69FC0 /* LoadingViewController.swift */; };
 		EFDA33F2CCFA25012F9A59467B955531 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		FF291C251D2412FC0002D8AA /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF291C241D2412FC0002D8AA /* ErrorView.swift */; };
-		FF291C271D2427AD0002D8AA /* SimpleErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF291C261D2427AD0002D8AA /* SimpleErrorView.swift */; };
-		FF291C2A1D2429F40002D8AA /* UIView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF291C291D2429F40002D8AA /* UIView+Nib.swift */; };
+		F9A13A2258678E90CDEDB22795775F70 /* MulticolorLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E9B5579BA56746EA61861089A39704 /* MulticolorLoadingView.swift */; };
+		FE76274E3EE1A51A9D4B573E9F15500D /* MulticolorActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA28F95C9B6A99B36F961FA601DF6335 /* MulticolorActivityView.swift */; };
+		FE7C4850A5F3794200A25B211B2E2CFD /* LoadingViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE37D4CF8980BA303B2FED53707BB30 /* LoadingViewController-dummy.m */; };
+		FFE496B41D246E7600DA7BB3 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = FFE496B31D246E7600DA7BB3 /* .gitkeep */; };
+		FFE496BD1D24716E00DA7BB3 /* doc_fail.png in Resources */ = {isa = PBXBuildFile; fileRef = FFE496BC1D24716E00DA7BB3 /* doc_fail.png */; };
+		FFE496C61D24770E00DA7BB3 /* SimpleErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFE496C51D24770E00DA7BB3 /* SimpleErrorView.xib */; };
+		FFE496C81D247CC600DA7BB3 /* sad.png in Resources */ = {isa = PBXBuildFile; fileRef = FFE496C71D247CC600DA7BB3 /* sad.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,55 +37,65 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D911971FBA6E5D6783684697658FDC73;
+			remoteGlobalIDString = 94D3EAEBA0F428833FBF1D469246F6C5;
 			remoteInfo = LoadingViewController;
+		};
+		D7C1FF9EC6AEC16235AC2B33A198BD2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA6783015B42BD20C284AF879EAA0BBA;
+			remoteInfo = "LoadingViewController-LoadingViewController";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0941E55BED4B9F51196CC2EE9C393C82 /* LoadingViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LoadingViewController-dummy.m"; sourceTree = "<group>"; };
+		054CCEC089DED454C7E7A7628383789C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C3AF1D57A7BE88BD5E1D36C73C77D00 /* Pods-LoadingViewController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LoadingViewController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		1FCF0764C3AE95E1BFC00B66A65C62C6 /* LoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		1E80DC522E21731E7F35E027E7D69FC0 /* LoadingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		21804C7B1F181A488F82CA1256F9C0D6 /* LoadingViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LoadingViewController-prefix.pch"; sourceTree = "<group>"; };
 		222E482D2896EB63D2242F41262E520D /* Pods-LoadingViewController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LoadingViewController_Tests-umbrella.h"; sourceTree = "<group>"; };
-		26978DB3ACA52C4508C9ED29EDB271C3 /* Pods_LoadingViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoadingViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E2B9FD74AB2578DE574BF3EAA58A76 /* Pods-LoadingViewController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LoadingViewController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2C753B9BCD67D518723C3302EC1629EF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2C852596337665DDEBFD4647207718F5 /* LoadingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		2ED29E7250231EAB04ECA6FE2F8BFF96 /* Pods-LoadingViewController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LoadingViewController_Tests-resources.sh"; sourceTree = "<group>"; };
 		2F00DB692B89732AA9F3D40910DA12EA /* Pods-LoadingViewController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LoadingViewController_Example-frameworks.sh"; sourceTree = "<group>"; };
-		3246E691CFE565A603647C3AB5DC2521 /* LoadingViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LoadingViewController.xcconfig; sourceTree = "<group>"; };
-		337C861A3FE5CF9B04BE6544DB37FCB1 /* StrokeActivityView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StrokeActivityView.swift; sourceTree = "<group>"; };
-		4DB23D027ACF44AB3A67753DA8D22B52 /* MulticolorLoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MulticolorLoadingView.swift; sourceTree = "<group>"; };
+		37DFA96C26EF4FA86DDCDB6E47D8290B /* LoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		44D2FCA02AC31FA4382CE1BBA219E5E1 /* Pods_LoadingViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoadingViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54E9B5579BA56746EA61861089A39704 /* MulticolorLoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MulticolorLoadingView.swift; sourceTree = "<group>"; };
+		595F6302A477D7BFAFFD526CB09DDBDD /* IndicatorLoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IndicatorLoadingView.swift; sourceTree = "<group>"; };
 		609350BC0B6272C4DE6DEC81A9273EFB /* Pods-LoadingViewController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LoadingViewController_Tests.modulemap"; sourceTree = "<group>"; };
 		623D1789D70A9D831E82607157F7F291 /* Pods-LoadingViewController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LoadingViewController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		67F3D58B21E249356CF80A21F3FF3A9C /* ResourceBundle-LoadingViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-LoadingViewController-Info.plist"; sourceTree = "<group>"; };
 		6AFC8BFE73BCE632CB8EB14FB846E0F7 /* Pods-LoadingViewController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LoadingViewController_Example-umbrella.h"; sourceTree = "<group>"; };
-		7CDE8291FA4FAA2FC02794DA0C6861B3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DE37D4CF8980BA303B2FED53707BB30 /* LoadingViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LoadingViewController-dummy.m"; sourceTree = "<group>"; };
+		71533A57A60A69F7EAACF0897EC7A638 /* LoadingViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LoadingViewController.xcconfig; sourceTree = "<group>"; };
 		7D585A6C2901833F989EB81F2ACB80DF /* Pods-LoadingViewController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LoadingViewController_Example-resources.sh"; sourceTree = "<group>"; };
 		7EB247D8DEE2F40723B7824094A76B8C /* Pods-LoadingViewController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LoadingViewController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		7FD86757F705FD2BD906D973F9468B6E /* StrokeLoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StrokeLoadingView.swift; sourceTree = "<group>"; };
+		85553BE52F8BF862A717C0A1CD6DF3DF /* StrokeLoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StrokeLoadingView.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		957CF3CC8954A7B3C376158691384960 /* LoadingViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LoadingViewController.modulemap; sourceTree = "<group>"; };
+		99CE79F94C8A047B441ED916C90C9BEF /* ErrorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		A145AED631499047D6181A633DDD5C06 /* Pods_LoadingViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoadingViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1E0C30C2025894F69B80ACF939EAE01 /* LoadingViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadingViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A66C9A39ED8570BFC0C813BC89A35E6B /* Pods-LoadingViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoadingViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
+		AA28F95C9B6A99B36F961FA601DF6335 /* MulticolorActivityView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MulticolorActivityView.swift; sourceTree = "<group>"; };
+		AC9666259ED1210A78D3895A4DD024A5 /* StrokeActivityView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StrokeActivityView.swift; sourceTree = "<group>"; };
+		B88C99CB769237921886BBEC9E379EA1 /* LoadingViewController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoadingViewController.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA2B244FCB43409DCB8E00DD25BB2388 /* Pods-LoadingViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoadingViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BEFB42B5E1E552D6DB8799D8C02554FF /* Pods-LoadingViewController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LoadingViewController_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		C2BCA0378EAFB6893663A19DAFC60AE1 /* IndicatorLoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IndicatorLoadingView.swift; sourceTree = "<group>"; };
 		CBD521050F277A67C9FF37224F11F3C3 /* Pods-LoadingViewController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LoadingViewController_Tests-dummy.m"; sourceTree = "<group>"; };
 		CE13D1A5AD22F44E60CD6E0508316A40 /* Pods-LoadingViewController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LoadingViewController_Example-dummy.m"; sourceTree = "<group>"; };
-		CE2AB2A0C5AB6FC6733D7A642BC98029 /* LoadingViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LoadingViewController-umbrella.h"; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CFD22EBDF8F5CE408AD79E0D70764283 /* Pods-LoadingViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoadingViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D6CB477C661F02FDCA374E588FB3C37A /* LoadingViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LoadingViewController.modulemap; sourceTree = "<group>"; };
+		D8D4878ACBAB415D11BB49F53331348B /* LoadingViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LoadingViewController-umbrella.h"; sourceTree = "<group>"; };
+		E24704AC393C2EAF9B91301812999AA3 /* SimpleErrorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SimpleErrorView.swift; sourceTree = "<group>"; };
 		E32E467B0EEE2B3F18C1391133F32542 /* Pods-LoadingViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LoadingViewController_Example.modulemap"; sourceTree = "<group>"; };
 		E3715262847EDACF81C9C7925D0E619F /* Pods-LoadingViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoadingViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E466A1AC38ED862AA15CB4984BECAB05 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EA38A696050FB715C6AF667140B18AB5 /* LoadingViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadingViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE34DF3E29B19B746F9B835F45469014 /* LoadingViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LoadingViewController-prefix.pch"; sourceTree = "<group>"; };
-		F128EF8F3ED1C684011A1CC7AE11A153 /* Pods_LoadingViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoadingViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5B8EAE28482CBE50E7305E69CE22F9F /* MulticolorActivityView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MulticolorActivityView.swift; sourceTree = "<group>"; };
-		FF291C241D2412FC0002D8AA /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
-		FF291C261D2427AD0002D8AA /* SimpleErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleErrorView.swift; sourceTree = "<group>"; };
-		FF291C291D2429F40002D8AA /* UIView+Nib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Nib.swift"; sourceTree = "<group>"; };
-		FF291C2D1D242D2A0002D8AA /* doc_fail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doc_fail.png; sourceTree = "<group>"; };
-		FFE496B11D246CBC00DA7BB3 /* SimpleErrorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleErrorView.xib; sourceTree = "<group>"; };
+		FFE496B31D246E7600DA7BB3 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		FFE496BC1D24716E00DA7BB3 /* doc_fail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doc_fail.png; sourceTree = "<group>"; };
+		FFE496C51D24770E00DA7BB3 /* SimpleErrorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleErrorView.xib; sourceTree = "<group>"; };
+		FFE496C71D247CC600DA7BB3 /* sad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sad.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,11 +107,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D80E6C94932A64B3493C2D81DE32A7DB /* Frameworks */ = {
+		965D7134F4EDDD6B99D51859C51B4BF6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F5D6542308D2E17E80B01F0DBD62DFC /* Foundation.framework in Frameworks */,
+				EA0EEF3B73C054F4986557EC19FA0BCE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A83F9F9D41A9629BA06BE8488AB5193E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +133,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C89A006D098C51C5D70095331F076AD /* LoadingViews */ = {
+			isa = PBXGroup;
+			children = (
+				595F6302A477D7BFAFFD526CB09DDBDD /* IndicatorLoadingView.swift */,
+				37DFA96C26EF4FA86DDCDB6E47D8290B /* LoadingView.swift */,
+				54E9B5579BA56746EA61861089A39704 /* MulticolorLoadingView.swift */,
+				85553BE52F8BF862A717C0A1CD6DF3DF /* StrokeLoadingView.swift */,
+				B4796AECD2F6314CF4B3C408E46CC3BD /* ActivityViews */,
+			);
+			path = LoadingViews;
+			sourceTree = "<group>";
+		};
+		20ECA9ACBD039EBCFB7019183FB683D2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C0CA6AF72849318E61F9C0F954565A41 /* ErrorViews */,
+				0C89A006D098C51C5D70095331F076AD /* LoadingViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2964FCAC6527A636FBD5FAD464ADE36B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				054CCEC089DED454C7E7A7628383789C /* Info.plist */,
+				957CF3CC8954A7B3C376158691384960 /* LoadingViewController.modulemap */,
+				71533A57A60A69F7EAACF0897EC7A638 /* LoadingViewController.xcconfig */,
+				6DE37D4CF8980BA303B2FED53707BB30 /* LoadingViewController-dummy.m */,
+				21804C7B1F181A488F82CA1256F9C0D6 /* LoadingViewController-prefix.pch */,
+				D8D4878ACBAB415D11BB49F53331348B /* LoadingViewController-umbrella.h */,
+				67F3D58B21E249356CF80A21F3FF3A9C /* ResourceBundle-LoadingViewController-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LoadingViewController";
+			sourceTree = "<group>";
+		};
+		318FE995B0B81907CC315D33198A52BD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1E80DC522E21731E7F35E027E7D69FC0 /* LoadingViewController.swift */,
+				20ECA9ACBD039EBCFB7019183FB683D2 /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,45 +195,12 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		54675BDA954C4BB688029F9C295940A7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EA38A696050FB715C6AF667140B18AB5 /* LoadingViewController.framework */,
-				26978DB3ACA52C4508C9ED29EDB271C3 /* Pods_LoadingViewController_Example.framework */,
-				F128EF8F3ED1C684011A1CC7AE11A153 /* Pods_LoadingViewController_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		671A93948F8CEFE6FBE77255F2CE74D0 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D977B3E66CEAEA00B2287E458C234B2C /* LoadingViewController */,
+				FB742A1C36426EF6B206D5DDB3A389B7 /* LoadingViewController */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		77DF5F59E48EDC194E994C0DD6156B6C /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				FF291C2C1D242D2A0002D8AA /* Resources */,
-				2C852596337665DDEBFD4647207718F5 /* LoadingViewController.swift */,
-				AC8DFDAA076DAC3F2BF1AF94D7E6FB22 /* Views */,
-				FF291C281D2429D00002D8AA /* Extensions */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		793D1E05EE0D4FC1C0D9DD89A606FEB7 /* LoadingViews */ = {
-			isa = PBXGroup;
-			children = (
-				C2BCA0378EAFB6893663A19DAFC60AE1 /* IndicatorLoadingView.swift */,
-				1FCF0764C3AE95E1BFC00B66A65C62C6 /* LoadingView.swift */,
-				4DB23D027ACF44AB3A67753DA8D22B52 /* MulticolorLoadingView.swift */,
-				7FD86757F705FD2BD906D973F9468B6E /* StrokeLoadingView.swift */,
-				C61D67A94A0FC9B79709EBF02B80995A /* ActivityViews */,
-			);
-			path = LoadingViews;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -176,7 +209,7 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				671A93948F8CEFE6FBE77255F2CE74D0 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				54675BDA954C4BB688029F9C295940A7 /* Products */,
+				9AA700F63C0E64A139F85D229E751D2D /* Products */,
 				3FD80109DFBB778B8336C728B28863A9 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -199,13 +232,24 @@
 			path = "Target Support Files/Pods-LoadingViewController_Tests";
 			sourceTree = "<group>";
 		};
-		AC8DFDAA076DAC3F2BF1AF94D7E6FB22 /* Views */ = {
+		9AA700F63C0E64A139F85D229E751D2D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FF291C231D2412DA0002D8AA /* ErrorViews */,
-				793D1E05EE0D4FC1C0D9DD89A606FEB7 /* LoadingViews */,
+				B88C99CB769237921886BBEC9E379EA1 /* LoadingViewController.bundle */,
+				A1E0C30C2025894F69B80ACF939EAE01 /* LoadingViewController.framework */,
+				A145AED631499047D6181A633DDD5C06 /* Pods_LoadingViewController_Example.framework */,
+				44D2FCA02AC31FA4382CE1BBA219E5E1 /* Pods_LoadingViewController_Tests.framework */,
 			);
-			path = Views;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4796AECD2F6314CF4B3C408E46CC3BD /* ActivityViews */ = {
+			isa = PBXGroup;
+			children = (
+				AA28F95C9B6A99B36F961FA601DF6335 /* MulticolorActivityView.swift */,
+				AC9666259ED1210A78D3895A4DD024A5 /* StrokeActivityView.swift */,
+			);
+			path = ActivityViews;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -216,45 +260,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C22846587DB78A162296C3F5A2B570A7 /* LoadingViewController */ = {
+		C0CA6AF72849318E61F9C0F954565A41 /* ErrorViews */ = {
 			isa = PBXGroup;
 			children = (
-				77DF5F59E48EDC194E994C0DD6156B6C /* Classes */,
+				99CE79F94C8A047B441ED916C90C9BEF /* ErrorView.swift */,
+				E24704AC393C2EAF9B91301812999AA3 /* SimpleErrorView.swift */,
+				FFE496C51D24770E00DA7BB3 /* SimpleErrorView.xib */,
 			);
-			path = LoadingViewController;
+			path = ErrorViews;
 			sourceTree = "<group>";
 		};
-		C61D67A94A0FC9B79709EBF02B80995A /* ActivityViews */ = {
+		FB742A1C36426EF6B206D5DDB3A389B7 /* LoadingViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F5B8EAE28482CBE50E7305E69CE22F9F /* MulticolorActivityView.swift */,
-				337C861A3FE5CF9B04BE6544DB37FCB1 /* StrokeActivityView.swift */,
-			);
-			path = ActivityViews;
-			sourceTree = "<group>";
-		};
-		D20786C22ECA40D1F84B1C1896446A45 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7CDE8291FA4FAA2FC02794DA0C6861B3 /* Info.plist */,
-				D6CB477C661F02FDCA374E588FB3C37A /* LoadingViewController.modulemap */,
-				3246E691CFE565A603647C3AB5DC2521 /* LoadingViewController.xcconfig */,
-				0941E55BED4B9F51196CC2EE9C393C82 /* LoadingViewController-dummy.m */,
-				EE34DF3E29B19B746F9B835F45469014 /* LoadingViewController-prefix.pch */,
-				CE2AB2A0C5AB6FC6733D7A642BC98029 /* LoadingViewController-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/LoadingViewController";
-			sourceTree = "<group>";
-		};
-		D977B3E66CEAEA00B2287E458C234B2C /* LoadingViewController */ = {
-			isa = PBXGroup;
-			children = (
-				C22846587DB78A162296C3F5A2B570A7 /* LoadingViewController */,
-				D20786C22ECA40D1F84B1C1896446A45 /* Support Files */,
+				FD5E885FA99358F47D6C574850865E45 /* LoadingViewController */,
+				2964FCAC6527A636FBD5FAD464ADE36B /* Support Files */,
 			);
 			name = LoadingViewController;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		FD5E885FA99358F47D6C574850865E45 /* LoadingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FFE496B21D246E7600DA7BB3 /* Assets */,
+				318FE995B0B81907CC315D33198A52BD /* Classes */,
+			);
+			path = LoadingViewController;
 			sourceTree = "<group>";
 		};
 		FDEC7C5991F0A68CA128C44E1B7A7DE6 /* Pods-LoadingViewController_Example */ = {
@@ -275,30 +307,14 @@
 			path = "Target Support Files/Pods-LoadingViewController_Example";
 			sourceTree = "<group>";
 		};
-		FF291C231D2412DA0002D8AA /* ErrorViews */ = {
+		FFE496B21D246E7600DA7BB3 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				FFE496B11D246CBC00DA7BB3 /* SimpleErrorView.xib */,
-				FF291C241D2412FC0002D8AA /* ErrorView.swift */,
-				FF291C261D2427AD0002D8AA /* SimpleErrorView.swift */,
+				FFE496C71D247CC600DA7BB3 /* sad.png */,
+				FFE496BC1D24716E00DA7BB3 /* doc_fail.png */,
+				FFE496B31D246E7600DA7BB3 /* .gitkeep */,
 			);
-			path = ErrorViews;
-			sourceTree = "<group>";
-		};
-		FF291C281D2429D00002D8AA /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				FF291C291D2429F40002D8AA /* UIView+Nib.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		FF291C2C1D242D2A0002D8AA /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				FF291C2D1D242D2A0002D8AA /* doc_fail.png */,
-			);
-			path = Resources;
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,19 +328,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1FB4676DFAFF21BEC27FB2F42D235AEC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DA6FA7169A5489E62CBCFD3FD95D966 /* LoadingViewController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BD4B521E8DD487DD654F501A75E93668 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0C6D8C82688D88E75106476C1BA126CB /* Pods-LoadingViewController_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F08E5C5FDEB39B865CB597AFE6AFF619 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A2607FB1396B49A558B94EEFF9FFF314 /* LoadingViewController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,7 +362,7 @@
 			);
 			name = "Pods-LoadingViewController_Example";
 			productName = "Pods-LoadingViewController_Example";
-			productReference = 26978DB3ACA52C4508C9ED29EDB271C3 /* Pods_LoadingViewController_Example.framework */;
+			productReference = A145AED631499047D6181A633DDD5C06 /* Pods_LoadingViewController_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		7227FE33F21C2DD5B839FE7F88C227D7 /* Pods-LoadingViewController_Tests */ = {
@@ -363,25 +379,44 @@
 			);
 			name = "Pods-LoadingViewController_Tests";
 			productName = "Pods-LoadingViewController_Tests";
-			productReference = F128EF8F3ED1C684011A1CC7AE11A153 /* Pods_LoadingViewController_Tests.framework */;
+			productReference = 44D2FCA02AC31FA4382CE1BBA219E5E1 /* Pods_LoadingViewController_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D911971FBA6E5D6783684697658FDC73 /* LoadingViewController */ = {
+		94D3EAEBA0F428833FBF1D469246F6C5 /* LoadingViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BCAE6942A09888C309613A05F9926852 /* Build configuration list for PBXNativeTarget "LoadingViewController" */;
+			buildConfigurationList = 5FB3D3CE26C007BE38F06B4E4B1ADBD0 /* Build configuration list for PBXNativeTarget "LoadingViewController" */;
 			buildPhases = (
-				078AE1C48847678FC39FAAF2A839AB89 /* Sources */,
-				D80E6C94932A64B3493C2D81DE32A7DB /* Frameworks */,
-				F08E5C5FDEB39B865CB597AFE6AFF619 /* Headers */,
+				EAC7D6A1DB969F78188F4E482FAA0A91 /* Sources */,
+				965D7134F4EDDD6B99D51859C51B4BF6 /* Frameworks */,
+				6127BA6B4501DFB1C48155B3DFAC2712 /* Resources */,
+				1FB4676DFAFF21BEC27FB2F42D235AEC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D8B400B99B5DDD06807EA0048ED459F /* PBXTargetDependency */,
+			);
+			name = LoadingViewController;
+			productName = LoadingViewController;
+			productReference = A1E0C30C2025894F69B80ACF939EAE01 /* LoadingViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AA6783015B42BD20C284AF879EAA0BBA /* LoadingViewController-LoadingViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85C9D732D848A754A15A94DC1AC00D46 /* Build configuration list for PBXNativeTarget "LoadingViewController-LoadingViewController" */;
+			buildPhases = (
+				F40FFA0466B32E1DC175A2B0E28C06FB /* Sources */,
+				A83F9F9D41A9629BA06BE8488AB5193E /* Frameworks */,
+				DE1B51260EDE1EE6B30C4ABDD0809C8A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = LoadingViewController;
-			productName = LoadingViewController;
-			productReference = EA38A696050FB715C6AF667140B18AB5 /* LoadingViewController.framework */;
-			productType = "com.apple.product-type.framework";
+			name = "LoadingViewController-LoadingViewController";
+			productName = "LoadingViewController-LoadingViewController";
+			productReference = B88C99CB769237921886BBEC9E379EA1 /* LoadingViewController.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -400,36 +435,41 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 54675BDA954C4BB688029F9C295940A7 /* Products */;
+			productRefGroup = 9AA700F63C0E64A139F85D229E751D2D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D911971FBA6E5D6783684697658FDC73 /* LoadingViewController */,
+				94D3EAEBA0F428833FBF1D469246F6C5 /* LoadingViewController */,
+				AA6783015B42BD20C284AF879EAA0BBA /* LoadingViewController-LoadingViewController */,
 				2629121EC914E79FDD10F394A2D5885F /* Pods-LoadingViewController_Example */,
 				7227FE33F21C2DD5B839FE7F88C227D7 /* Pods-LoadingViewController_Tests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		078AE1C48847678FC39FAAF2A839AB89 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXResourcesBuildPhase section */
+		6127BA6B4501DFB1C48155B3DFAC2712 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8C36FC5A65210875489E08A5C9E2312 /* IndicatorLoadingView.swift in Sources */,
-				0DBB6D228D434A501E823E3EB6C7B285 /* LoadingView.swift in Sources */,
-				1D5440CB5B428DDA3883E7FC338C2461 /* LoadingViewController-dummy.m in Sources */,
-				FF291C271D2427AD0002D8AA /* SimpleErrorView.swift in Sources */,
-				B68B0CFB3839472B9A92CFB0297B0211 /* LoadingViewController.swift in Sources */,
-				25D2A03262B57E584AD772E8588E446B /* MulticolorActivityView.swift in Sources */,
-				7535612E54395FDC569BDDBC54608B19 /* MulticolorLoadingView.swift in Sources */,
-				FF291C2A1D2429F40002D8AA /* UIView+Nib.swift in Sources */,
-				CC3BA2D518A1B3763F29305741B86B8C /* StrokeActivityView.swift in Sources */,
-				FF291C251D2412FC0002D8AA /* ErrorView.swift in Sources */,
-				28C4987EC3F9630A4E52FF7B8B910326 /* StrokeLoadingView.swift in Sources */,
+				FFE496BD1D24716E00DA7BB3 /* doc_fail.png in Resources */,
+				66EE1F959FB0A3C8CB303662DC902B5D /* LoadingViewController.bundle in Resources */,
+				FFE496C81D247CC600DA7BB3 /* sad.png in Resources */,
+				FFE496B41D246E7600DA7BB3 /* .gitkeep in Resources */,
+				FFE496C61D24770E00DA7BB3 /* SimpleErrorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DE1B51260EDE1EE6B30C4ABDD0809C8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
 		628196322D73F2CEEDEF59447957FD43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -446,47 +486,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EAC7D6A1DB969F78188F4E482FAA0A91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E492C1CC938ED16A2A152D9393A5AE4 /* ErrorView.swift in Sources */,
+				5235111B99C3515762C2705154AA8F08 /* IndicatorLoadingView.swift in Sources */,
+				626E21C0F0F129218F73599434118AFE /* LoadingView.swift in Sources */,
+				FE7C4850A5F3794200A25B211B2E2CFD /* LoadingViewController-dummy.m in Sources */,
+				EA3029200B176F35CF1A5F1EA4B033B3 /* LoadingViewController.swift in Sources */,
+				FE76274E3EE1A51A9D4B573E9F15500D /* MulticolorActivityView.swift in Sources */,
+				F9A13A2258678E90CDEDB22795775F70 /* MulticolorLoadingView.swift in Sources */,
+				D0A7CA9F741C25A1EC665CA8C753AA94 /* SimpleErrorView.swift in Sources */,
+				4CB25BF5534349270EAD28205ABC6ED3 /* StrokeActivityView.swift in Sources */,
+				623B6E61FE7AE531A476BC7C589D6A52 /* StrokeLoadingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F40FFA0466B32E1DC175A2B0E28C06FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4D8B400B99B5DDD06807EA0048ED459F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "LoadingViewController-LoadingViewController";
+			target = AA6783015B42BD20C284AF879EAA0BBA /* LoadingViewController-LoadingViewController */;
+			targetProxy = D7C1FF9EC6AEC16235AC2B33A198BD2C /* PBXContainerItemProxy */;
+		};
 		B6D5836CD03B16AD7A0BC384CD015628 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LoadingViewController;
-			target = D911971FBA6E5D6783684697658FDC73 /* LoadingViewController */;
+			target = 94D3EAEBA0F428833FBF1D469246F6C5 /* LoadingViewController */;
 			targetProxy = 8B7DF5021BB673D5E3F5B21101505CE5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		04AB5B61CDEF4914E18A0C080164634A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3246E691CFE565A603647C3AB5DC2521 /* LoadingViewController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LoadingViewController/LoadingViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LoadingViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LoadingViewController/LoadingViewController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = LoadingViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -592,6 +633,52 @@
 			};
 			name = Release;
 		};
+		78A563F7A13CA0203E5B760A5AC2766A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71533A57A60A69F7EAACF0897EC7A638 /* LoadingViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LoadingViewController/LoadingViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LoadingViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LoadingViewController/LoadingViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LoadingViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		84F11EAA16355405D9456268592A014C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71533A57A60A69F7EAACF0897EC7A638 /* LoadingViewController.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LoadingViewController";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/LoadingViewController/ResourceBundle-LoadingViewController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = LoadingViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		87E26B1F5F34E528614F9BD412D53382 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A66C9A39ED8570BFC0C813BC89A35E6B /* Pods-LoadingViewController_Example.release.xcconfig */;
@@ -624,6 +711,23 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		C0B8B94923FA03B4114DA56796973A53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71533A57A60A69F7EAACF0897EC7A638 /* LoadingViewController.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LoadingViewController";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/LoadingViewController/ResourceBundle-LoadingViewController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = LoadingViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
 		};
 		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -667,36 +771,6 @@
 			};
 			name = Debug;
 		};
-		D8244EC6574464D0843250BDA2B1455E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3246E691CFE565A603647C3AB5DC2521 /* LoadingViewController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LoadingViewController/LoadingViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LoadingViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LoadingViewController/LoadingViewController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = LoadingViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		DECFFBBAACB0B16050296363499B47AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BA2B244FCB43409DCB8E00DD25BB2388 /* Pods-LoadingViewController_Tests.debug.xcconfig */;
@@ -730,6 +804,36 @@
 			};
 			name = Debug;
 		};
+		EC50A4FCB72B81C050180293D51D1079 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71533A57A60A69F7EAACF0897EC7A638 /* LoadingViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LoadingViewController/LoadingViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LoadingViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LoadingViewController/LoadingViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = LoadingViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -751,20 +855,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		5FB3D3CE26C007BE38F06B4E4B1ADBD0 /* Build configuration list for PBXNativeTarget "LoadingViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC50A4FCB72B81C050180293D51D1079 /* Debug */,
+				78A563F7A13CA0203E5B760A5AC2766A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85C9D732D848A754A15A94DC1AC00D46 /* Build configuration list for PBXNativeTarget "LoadingViewController-LoadingViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0B8B94923FA03B4114DA56796973A53 /* Debug */,
+				84F11EAA16355405D9456268592A014C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		86F09608346F51914AAD88747F67CF17 /* Build configuration list for PBXNativeTarget "Pods-LoadingViewController_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4B65B28797275B7149CB089633099918 /* Debug */,
 				87E26B1F5F34E528614F9BD412D53382 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BCAE6942A09888C309613A05F9926852 /* Build configuration list for PBXNativeTarget "LoadingViewController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D8244EC6574464D0843250BDA2B1455E /* Debug */,
-				04AB5B61CDEF4914E18A0C080164634A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

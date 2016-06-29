@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LoadingViewController: 9c003a064a21fc5877e94b42150fc97ff12847c6
+  LoadingViewController: 586b934f15c756b62dd4ca84d199ede8e00d810e
 
 PODFILE CHECKSUM: eb05bc03d0d2629562119d09afc76463475b36a0
 

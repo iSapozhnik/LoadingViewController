@@ -109,6 +109,34 @@ public class LoadingViewController: UIViewController {
 		view.layoutIfNeeded()
 	}
 	
+	func addErrorView(viewToAdd: UIView) {
+		view.addSubview(viewToAdd)
+		viewToAdd.translatesAutoresizingMaskIntoConstraints = false
+		let bindings = ["view": viewToAdd]
+		view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("|[view]|", options: [.AlignAllLeading, .AlignAllTrailing], metrics: nil, views: bindings))
+		view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[view]|", options: [.AlignAllTop, .AlignAllBottom], metrics: nil, views: bindings))
+		view.layoutIfNeeded()
+	}
+	
+	/*
+	- (void)addErrorView:(UIView *)aView
+	{
+	[self.view addSubview:aView];
+	aView.translatesAutoresizingMaskIntoConstraints = NO;
+	[self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:
+	@"|[aView]|" options:NSLayoutFormatAlignAllTrailing |
+	NSLayoutFormatAlignAllLeading metrics:nil views:
+	NSDictionaryOfVariableBindings(aView)]];
+	[self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:
+	@"V:[aView]|" options:NSLayoutFormatAlignAllBottom metrics:nil
+	views:NSDictionaryOfVariableBindings(aView)]];
+	[self.view addConstraint:[NSLayoutConstraint constraintWithItem:
+	aView attribute:NSLayoutAttributeTop relatedBy:
+	NSLayoutRelationEqual toItem:self.topGuideConstraint attribute:
+	NSLayoutAttributeBottom multiplier:1.0 constant:self.contentInsets.top]];
+	}
+*/
+	
 	func viewForScreen(contentType: ContentType) -> UIView {
 		switch contentType {
 		case .Content:
@@ -247,6 +275,8 @@ public class LoadingViewController: UIViewController {
 		switch contentType {
 		case .Loading:
 			addLoadingView(toView)
+		case .Failure:
+			addErrorView(toView)
 		default:
 			break
 		}

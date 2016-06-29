@@ -33,7 +33,7 @@ LoadingViewController is able to switch from ContentView to LoadingView and then
   s.source_files = 'LoadingViewController/Classes/**/*'
   
   s.resource_bundles = {
-    'LoadingViewController' => ['LoadingViewController/Assets/*']
+    'LoadingViewController' => ['LoadingViewController/Assets/*.png']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

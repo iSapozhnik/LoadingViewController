@@ -28,16 +28,13 @@ Subclass your controller from LoadingViewController. On the top of View of your 
 
 ```swift
 override func viewDidLoad() {
-super.viewDidLoad()
-
-// Do any additional setup after loading the view, typically from a nib.
-
-delay(3.0) { [weak self] in
-self?.setVisibleScreen(.Loading)
-self?.delay(3, closure: { [weak self] in
-self?.setVisibleScreen(.Content)
-})
-}
+	super.viewDidLoad()
+	
+	setVisibleScreen(.Loading)
+	APIService.fetchSomeData({ response in
+		// Update UI
+		self.setVisibleScreen(.Content)
+	}) 
 }
 ```
 

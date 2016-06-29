@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SimpleErrorView" customModule="LoadingViewController">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QG0-nT-4fb">
+                    <rect key="frame" x="50" y="0.0" width="220" height="480"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Oops! Something went wrong." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="220" translatesAutoresizingMaskIntoConstraints="NO" id="gfN-0e-n0e">
+                            <rect key="frame" x="0.0" y="333" width="220" height="38"/>
+                            <color key="backgroundColor" red="0.40784313729999999" green="0.41568627450000001" blue="0.50980392159999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFX-MB-E6F" userLabel="message label">
+                            <rect key="frame" x="0.0" y="391" width="220" height="19"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.41176470590000003" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNq-j4-dgH">
+                            <rect key="frame" x="20" y="430" width="180" height="30"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                            <state key="normal" title="Reload in a moment">
+                                <color key="titleColor" red="0.13725490200000001" green="0.66666666669999997" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="0.24313725489999999" green="0.42352941179999998" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="doc_fail.png" translatesAutoresizingMaskIntoConstraints="NO" id="pyy-8x-tJd">
+                            <rect key="frame" x="-210" y="64" width="640" height="240"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="sNq-j4-dgH" firstAttribute="top" secondItem="bFX-MB-E6F" secondAttribute="bottom" constant="20" id="2Yf-JI-XFc"/>
+                        <constraint firstItem="bFX-MB-E6F" firstAttribute="centerX" secondItem="gfN-0e-n0e" secondAttribute="centerX" id="Lu7-vy-bCW"/>
+                        <constraint firstItem="gfN-0e-n0e" firstAttribute="leading" secondItem="QG0-nT-4fb" secondAttribute="leading" id="Pib-Qe-VLS"/>
+                        <constraint firstItem="sNq-j4-dgH" firstAttribute="leading" secondItem="QG0-nT-4fb" secondAttribute="leading" constant="20" id="Q6v-T4-fmc"/>
+                        <constraint firstItem="bFX-MB-E6F" firstAttribute="leading" secondItem="QG0-nT-4fb" secondAttribute="leading" id="csy-4V-xWP"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="sNq-j4-dgH" secondAttribute="bottom" constant="20" id="gGg-K0-r2x"/>
+                        <constraint firstAttribute="trailing" secondItem="bFX-MB-E6F" secondAttribute="trailing" id="hcI-kf-Ee8"/>
+                        <constraint firstItem="bFX-MB-E6F" firstAttribute="top" secondItem="gfN-0e-n0e" secondAttribute="bottom" constant="20" id="hfC-Mb-5u0"/>
+                        <constraint firstAttribute="trailing" secondItem="gfN-0e-n0e" secondAttribute="trailing" id="j6M-lK-8jA"/>
+                        <constraint firstAttribute="centerX" secondItem="pyy-8x-tJd" secondAttribute="centerX" id="jJv-kB-mXm"/>
+                        <constraint firstAttribute="centerX" secondItem="sNq-j4-dgH" secondAttribute="centerX" id="mYE-bY-lX2"/>
+                        <constraint firstItem="pyy-8x-tJd" firstAttribute="top" secondItem="QG0-nT-4fb" secondAttribute="top" constant="64" id="rgd-t9-uOt"/>
+                        <constraint firstAttribute="trailing" secondItem="sNq-j4-dgH" secondAttribute="trailing" constant="20" id="wl6-lh-GTK"/>
+                        <constraint firstItem="gfN-0e-n0e" firstAttribute="top" secondItem="pyy-8x-tJd" secondAttribute="bottom" constant="29" id="zDY-xi-xe7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="QG0-nT-4fb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0GS-3x-pkV"/>
+                <constraint firstAttribute="trailing" secondItem="QG0-nT-4fb" secondAttribute="trailing" constant="50" id="DCX-W0-eWD"/>
+                <constraint firstAttribute="bottom" secondItem="QG0-nT-4fb" secondAttribute="bottom" id="h3X-sS-UKx"/>
+                <constraint firstItem="QG0-nT-4fb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="jNT-du-umr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="220" y="437"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="doc_fail.png" width="640" height="530"/>
+    </resources>
+</document>

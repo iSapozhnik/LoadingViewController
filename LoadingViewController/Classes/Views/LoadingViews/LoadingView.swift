@@ -13,6 +13,13 @@ protocol Animatable {
 	func stopAnimating()
 }
 
+enum LoadingViewStyle {
+	case Indicator
+	case Stroke
+	case Multicolor
+	case Custom
+}
+
 class LoadingView: UIView {
 
 	var title: String? {

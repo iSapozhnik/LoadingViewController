@@ -19,7 +19,7 @@ class ViewController: LoadingViewController {
 		delay(3.0) { [weak self] in
 			self?.setVisibleScreen(.Loading)
 			self?.delay(3, closure: { [weak self] in
-				self?.setVisibleScreen(.Content)
+				self?.setVisibleScreen(.Failure)
 			})
 		}
     }

@@ -8,6 +8,8 @@
 
 import UIKit
 
+// This extension should be used for testing purposes
+
 extension UIViewController {
 	public func delay(delay:Double, closure:()->()) {
 		dispatch_after(
@@ -17,23 +19,6 @@ extension UIViewController {
 			),
 			dispatch_get_main_queue(), closure)
 	}
-	
-	func synced(lock: AnyObject, closure: () -> ()) {
-		objc_sync_enter(lock)
-		closure()
-		objc_sync_exit(lock)
-	}
-}
-
-enum LoadingViewStyle {
-	case Indicator
-	case Stroke
-	case Multicolor
-	case Custom
-}
-
-enum ErrorViewStyle {
-	case Simple
 }
 
 public enum ContentType: Int {
@@ -53,6 +38,7 @@ let animationDuration: NSTimeInterval = 0.3;
 
 
 typealias AnimationDict = Dictionary<String, AnyObject>
+public typealias ActionHandler = () -> ()
 
 public class LoadingViewController: UIViewController {
 
@@ -82,12 +68,12 @@ public class LoadingViewController: UIViewController {
 	}
 	
 	func defaultErrorView() -> UIView {
-		//TODO: create default view for Error
-		return UIView()
+		let view = ErrorView.viewWithStyle(errorViewStyle(), actionHandler: nil)
+		return view
 	}
 	
 	func defaultLoadingView() -> UIView {
-		let view = LoadingView.viewWithStyle(.Multicolor)
+		let view = LoadingView.viewWithStyle(loadingViewStyle())
 		
 		//TODO: add title, background image, etc.
 		view.title = "Loading"
@@ -140,7 +126,8 @@ public class LoadingViewController: UIViewController {
 		}
 	}
 	
-	public func setVisibleScreen(contentType: ContentType) {
+	// TODO: add ActionHandler support to handle 'Retry' tap on ErrorViews
+	public func setVisibleScreen(contentType: ContentType, actionHandler:ActionHandler? = nil) {
 		if visibleContentType != contentType {
 			visibleContentType = contentType
 			setActiveView(viewForScreen(visibleContentType))

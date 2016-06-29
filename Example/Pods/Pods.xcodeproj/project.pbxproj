@@ -23,6 +23,9 @@
 		CC3BA2D518A1B3763F29305741B86B8C /* StrokeActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337C861A3FE5CF9B04BE6544DB37FCB1 /* StrokeActivityView.swift */; };
 		D8C36FC5A65210875489E08A5C9E2312 /* IndicatorLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BCA0378EAFB6893663A19DAFC60AE1 /* IndicatorLoadingView.swift */; };
 		EFDA33F2CCFA25012F9A59467B955531 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		FF291C251D2412FC0002D8AA /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF291C241D2412FC0002D8AA /* ErrorView.swift */; };
+		FF291C271D2427AD0002D8AA /* SimpleErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF291C261D2427AD0002D8AA /* SimpleErrorView.swift */; };
+		FF291C2A1D2429F40002D8AA /* UIView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF291C291D2429F40002D8AA /* UIView+Nib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +77,11 @@
 		EE34DF3E29B19B746F9B835F45469014 /* LoadingViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LoadingViewController-prefix.pch"; sourceTree = "<group>"; };
 		F128EF8F3ED1C684011A1CC7AE11A153 /* Pods_LoadingViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoadingViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5B8EAE28482CBE50E7305E69CE22F9F /* MulticolorActivityView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MulticolorActivityView.swift; sourceTree = "<group>"; };
+		FF291C241D2412FC0002D8AA /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		FF291C261D2427AD0002D8AA /* SimpleErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleErrorView.swift; sourceTree = "<group>"; };
+		FF291C291D2429F40002D8AA /* UIView+Nib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Nib.swift"; sourceTree = "<group>"; };
+		FF291C2D1D242D2A0002D8AA /* doc_fail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doc_fail.png; sourceTree = "<group>"; };
+		FFE496B11D246CBC00DA7BB3 /* SimpleErrorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleErrorView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,8 +150,10 @@
 		77DF5F59E48EDC194E994C0DD6156B6C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				FF291C2C1D242D2A0002D8AA /* Resources */,
 				2C852596337665DDEBFD4647207718F5 /* LoadingViewController.swift */,
 				AC8DFDAA076DAC3F2BF1AF94D7E6FB22 /* Views */,
+				FF291C281D2429D00002D8AA /* Extensions */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -192,6 +202,7 @@
 		AC8DFDAA076DAC3F2BF1AF94D7E6FB22 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FF291C231D2412DA0002D8AA /* ErrorViews */,
 				793D1E05EE0D4FC1C0D9DD89A606FEB7 /* LoadingViews */,
 			);
 			path = Views;
@@ -262,6 +273,32 @@
 			);
 			name = "Pods-LoadingViewController_Example";
 			path = "Target Support Files/Pods-LoadingViewController_Example";
+			sourceTree = "<group>";
+		};
+		FF291C231D2412DA0002D8AA /* ErrorViews */ = {
+			isa = PBXGroup;
+			children = (
+				FFE496B11D246CBC00DA7BB3 /* SimpleErrorView.xib */,
+				FF291C241D2412FC0002D8AA /* ErrorView.swift */,
+				FF291C261D2427AD0002D8AA /* SimpleErrorView.swift */,
+			);
+			path = ErrorViews;
+			sourceTree = "<group>";
+		};
+		FF291C281D2429D00002D8AA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FF291C291D2429F40002D8AA /* UIView+Nib.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FF291C2C1D242D2A0002D8AA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FF291C2D1D242D2A0002D8AA /* doc_fail.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,10 +419,13 @@
 				D8C36FC5A65210875489E08A5C9E2312 /* IndicatorLoadingView.swift in Sources */,
 				0DBB6D228D434A501E823E3EB6C7B285 /* LoadingView.swift in Sources */,
 				1D5440CB5B428DDA3883E7FC338C2461 /* LoadingViewController-dummy.m in Sources */,
+				FF291C271D2427AD0002D8AA /* SimpleErrorView.swift in Sources */,
 				B68B0CFB3839472B9A92CFB0297B0211 /* LoadingViewController.swift in Sources */,
 				25D2A03262B57E584AD772E8588E446B /* MulticolorActivityView.swift in Sources */,
 				7535612E54395FDC569BDDBC54608B19 /* MulticolorLoadingView.swift in Sources */,
+				FF291C2A1D2429F40002D8AA /* UIView+Nib.swift in Sources */,
 				CC3BA2D518A1B3763F29305741B86B8C /* StrokeActivityView.swift in Sources */,
+				FF291C251D2412FC0002D8AA /* ErrorView.swift in Sources */,
 				28C4987EC3F9630A4E52FF7B8B910326 /* StrokeLoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,6 +1,6 @@
 # LoadingViewController
 
-[![Build Status](https://travis-ci.org/iSapozhnik/LoadingViewController.svg?branch=0.1.4)](https://travis-ci.org/iSapozhnik/LoadingViewController)
+[![Build Status](https://travis-ci.org/iSapozhnik/LoadingViewController.svg?style=flat)](https://travis-ci.org/iSapozhnik/LoadingViewController)
 [![Version](https://img.shields.io/cocoapods/v/LoadingViewController.svg?style=flat)](http://cocoapods.org/pods/LoadingViewController)
 [![License](https://img.shields.io/cocoapods/l/LoadingViewController.svg?style=flat)](http://cocoapods.org/pods/LoadingViewController)
 [![Platform](https://img.shields.io/cocoapods/p/LoadingViewController.svg?style=flat)](http://cocoapods.org/pods/LoadingViewController)

@@ -15,19 +15,19 @@ class ViewController: LoadingViewController {
         super.viewDidLoad()
 		
         // Do any additional setup after loading the view, typically from a nib.
-		
-		delay(3.0) { [weak self] in
+
+		delay(1.0) { [weak self] in
 			self?.setVisibleScreen(.Loading)
 			self?.delay(3, closure: { [weak self] in
 				self?.errorTitle = "Lorem ipsum dolor sit amet, et nisl rebum viderer nam."
-				self?.errorIcon = UIImage(named: "doc_fail")
 				self?.errorMessage = "Ne laudem expetendis intellegam nec. Vel eu veritus omnesque, ei dolorem oporteat eos, admodum praesent te vix. Vel albucius oportere euripidis ne. Eum in timeam persius, no labore persequeris per, ea vix adhuc postulant."
+				self?.errorIcon = UIImage(named: "doc_fail")
 				self?.setVisibleScreen(.Failure)
-				self?.delay(1, closure: {
+				self?.delay(2, closure: {
 					self?.setVisibleScreen(.Loading)
 					self?.delay(2, closure: { [weak self] in
 						self?.setVisibleScreen(.Content)
-					})
+						})
 				})
 			})
 		}

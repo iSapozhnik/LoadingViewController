@@ -25,6 +25,7 @@ class SimpleErrorView: ErrorView {
 	}
 	
 	override func didSetImage() {
-		imageView?.image = image
+		guard let newImage = image else { return }
+		imageView?.image = newImage
 	}
 }

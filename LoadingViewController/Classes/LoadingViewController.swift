@@ -247,7 +247,9 @@ public class LoadingViewController: UIViewController {
 			startNextAnimationIfNeeded()
 		}
 		
-		addView(toView)
+		if contentType != .Content {
+			addView(toView)
+		}
 		
 		let theFromView = fromView
 		let fromViewIsContentView = (theFromView == self.contentView)

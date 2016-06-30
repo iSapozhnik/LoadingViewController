@@ -69,6 +69,11 @@
                 <constraint firstItem="QG0-nT-4fb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="jNT-du-umr"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="pyy-8x-tJd" id="CcE-BQ-SHz"/>
+                <outlet property="messageLabel" destination="bFX-MB-E6F" id="QhM-rg-P1s"/>
+                <outlet property="titleLabel" destination="gfN-0e-n0e" id="diR-Ym-7yZ"/>
+            </connections>
             <point key="canvasLocation" x="220" y="437"/>
         </view>
     </objects>

@@ -13,7 +13,7 @@ protocol Animatable {
 	func stopAnimating()
 }
 
-enum LoadingViewStyle {
+public enum LoadingViewStyle {
 	case Indicator
 	case Stroke
 	case Multicolor

@@ -12,25 +12,19 @@ class SimpleErrorView: ErrorView {
 
 	var view: UIView!
 	
-	private func xibSetup() {
-		view = loadViewFromNib()
-		view.frame = bounds
-		addSubview(view)
+	@IBOutlet var titleLabel: UILabel!
+	@IBOutlet weak var imageView: UIImageView!
+	@IBOutlet var messageLabel: UILabel!
+	
+	override func didSetTitle() {
+		titleLabel?.text = title
 	}
 	
-	convenience init() {
-		self.init(frame: CGRectZero)
-		xibSetup()
+	override func didSetMessage() {
+		messageLabel?.text = message ?? ""
 	}
 	
-	private func loadViewFromNib() -> UIView {
-		
-		let bundle = NSBundle(forClass: self.dynamicType)
-		let name = "\(self.dynamicType)".componentsSeparatedByString(".").last ?? ""
-		let nib = UINib(nibName: name, bundle: bundle)
-		let view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
-		
-		return view
+	override func didSetImage() {
+		imageView?.image = image
 	}
-
 }

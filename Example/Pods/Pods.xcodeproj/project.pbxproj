@@ -26,6 +26,7 @@
 		F9A13A2258678E90CDEDB22795775F70 /* MulticolorLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E9B5579BA56746EA61861089A39704 /* MulticolorLoadingView.swift */; };
 		FE76274E3EE1A51A9D4B573E9F15500D /* MulticolorActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA28F95C9B6A99B36F961FA601DF6335 /* MulticolorActivityView.swift */; };
 		FE7C4850A5F3794200A25B211B2E2CFD /* LoadingViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE37D4CF8980BA303B2FED53707BB30 /* LoadingViewController-dummy.m */; };
+		FF10E95A1D25A58300B9CCA6 /* UIView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF10E9591D25A58300B9CCA6 /* UIView+Nib.swift */; };
 		FFE496B41D246E7600DA7BB3 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = FFE496B31D246E7600DA7BB3 /* .gitkeep */; };
 		FFE496BD1D24716E00DA7BB3 /* doc_fail.png in Resources */ = {isa = PBXBuildFile; fileRef = FFE496BC1D24716E00DA7BB3 /* doc_fail.png */; };
 		FFE496C61D24770E00DA7BB3 /* SimpleErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFE496C51D24770E00DA7BB3 /* SimpleErrorView.xib */; };
@@ -92,6 +93,7 @@
 		E32E467B0EEE2B3F18C1391133F32542 /* Pods-LoadingViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LoadingViewController_Example.modulemap"; sourceTree = "<group>"; };
 		E3715262847EDACF81C9C7925D0E619F /* Pods-LoadingViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoadingViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E466A1AC38ED862AA15CB4984BECAB05 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF10E9591D25A58300B9CCA6 /* UIView+Nib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Nib.swift"; sourceTree = "<group>"; };
 		FFE496B31D246E7600DA7BB3 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		FFE496BC1D24716E00DA7BB3 /* doc_fail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doc_fail.png; sourceTree = "<group>"; };
 		FFE496C51D24770E00DA7BB3 /* SimpleErrorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleErrorView.xib; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 		318FE995B0B81907CC315D33198A52BD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				FF10E9581D25A56E00B9CCA6 /* Extensions */,
 				1E80DC522E21731E7F35E027E7D69FC0 /* LoadingViewController.swift */,
 				20ECA9ACBD039EBCFB7019183FB683D2 /* Views */,
 			);
@@ -305,6 +308,14 @@
 			);
 			name = "Pods-LoadingViewController_Example";
 			path = "Target Support Files/Pods-LoadingViewController_Example";
+			sourceTree = "<group>";
+		};
+		FF10E9581D25A56E00B9CCA6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FF10E9591D25A58300B9CCA6 /* UIView+Nib.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		FFE496B21D246E7600DA7BB3 /* Assets */ = {
@@ -497,6 +508,7 @@
 				EA3029200B176F35CF1A5F1EA4B033B3 /* LoadingViewController.swift in Sources */,
 				FE76274E3EE1A51A9D4B573E9F15500D /* MulticolorActivityView.swift in Sources */,
 				F9A13A2258678E90CDEDB22795775F70 /* MulticolorLoadingView.swift in Sources */,
+				FF10E95A1D25A58300B9CCA6 /* UIView+Nib.swift in Sources */,
 				D0A7CA9F741C25A1EC665CA8C753AA94 /* SimpleErrorView.swift in Sources */,
 				4CB25BF5534349270EAD28205ABC6ED3 /* StrokeActivityView.swift in Sources */,
 				623B6E61FE7AE531A476BC7C589D6A52 /* StrokeLoadingView.swift in Sources */,

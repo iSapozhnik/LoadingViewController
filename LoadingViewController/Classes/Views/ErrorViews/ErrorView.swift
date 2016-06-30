@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum ErrorViewStyle {
+public enum ErrorViewStyle {
 	case Simple
 }
 
@@ -36,7 +36,7 @@ class ErrorView: UIView {
 		
 		switch style {
 		case .Simple:
-			let errorView = SimpleErrorView()
+			let errorView = SimpleErrorView.loadFromNib()
 			errorView.action = actionHandler
 			return errorView
 		}

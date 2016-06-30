@@ -50,13 +50,13 @@ public class LoadingViewController: UIViewController {
 	var animationQueue = Array<AnimationDict>()
 	var currentAnimation: AnimationDict?
 	
-	var errorTitle: String = NSLocalizedString("Oops, something went wrong", comment: "")
-	var errorMessage: String?
-	var errorIcon: UIImage?
-	var errorAction: String?
+	public var errorTitle: String = NSLocalizedString("Oops, something went wrong", comment: "")
+	public var errorMessage: String?
+	public var errorIcon: UIImage?
+	public var errorAction: String?
 	
 	var noDataAction: String?
-	var moDataMessage: String = NSLocalizedString("No data availabel", comment: "")
+	public var moDataMessage: String = NSLocalizedString("No data availabel", comment: "")
 
 	var contentViewAllwaysAvailabel: Bool = false
 	
@@ -69,6 +69,9 @@ public class LoadingViewController: UIViewController {
 	
 	func defaultErrorView() -> UIView {
 		let view = ErrorView.viewWithStyle(errorViewStyle(), actionHandler: nil)
+		view.title = errorTitle
+		view.message = errorMessage
+		view.image = errorIcon
 		return view
 	}
 	
@@ -80,23 +83,23 @@ public class LoadingViewController: UIViewController {
 		return view
 	}
 	
-	func loadingViewStyle() -> LoadingViewStyle {
+	public func loadingViewStyle() -> LoadingViewStyle {
 		return .Indicator
 	}
 	
-	func errorViewStyle() -> ErrorViewStyle {
+	public func errorViewStyle() -> ErrorViewStyle {
 		return .Simple
 	}
 
-	func showsErrorView() -> Bool {
+	public func showsErrorView() -> Bool {
 		return true
 	}
 	
-	func showsNoDataView() -> Bool {
+	public func showsNoDataView() -> Bool {
 		return true
 	}
 	
-	func showsLoadingView() -> Bool {
+	public func showsLoadingView() -> Bool {
 		return true
 	}
 	

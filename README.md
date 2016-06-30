@@ -40,6 +40,7 @@ override func viewDidLoad() {
 * add support of UITableViewController and UICollectionViewController
 * implement NoData view, Empty view
 * fix autolayout issues
+* add pull to refresh and load more features
 * code refactoring :)
 
 ## Author

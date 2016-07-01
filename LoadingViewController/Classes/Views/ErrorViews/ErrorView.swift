@@ -40,7 +40,6 @@ class ErrorView: UIView {
 			errorView.action = actionHandler
 			return errorView
 		}
-		
 	}
 	
 	func didSetTitle() {}

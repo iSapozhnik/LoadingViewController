@@ -44,19 +44,29 @@ public class LoadingViewController: UIViewController {
 
 	@IBOutlet public var contentView: UIView!
 	
+	public var lastError: NSError?
+	
 	var visibleContentType: ContentType = .Undefined
 	var activeView: UIView?
 	
 	var animationQueue = Array<AnimationDict>()
 	var currentAnimation: AnimationDict?
 	
-	public var errorTitle: String = NSLocalizedString("Oops, something went wrong", comment: "")
-	public var errorMessage: String?
+	public var errorTitle: String {
+		get {
+			return lastError?.localizedDescription ?? NSLocalizedString("Oops, something went wrong", comment: "")
+		}
+	}
+	public var errorMessage: String {
+		get {
+			return lastError?.localizedFailureReason ?? NSLocalizedString("Please try again later", comment: "")
+		}
+	}
 	public var errorIcon: UIImage?
 	public var errorAction: String?
 	
 	var noDataAction: String?
-	public var moDataMessage: String = NSLocalizedString("No data availabel", comment: "")
+	public var noDataMessage: String = NSLocalizedString("No data availabel", comment: "")
 
 	var contentViewAllwaysAvailabel: Bool = false
 	

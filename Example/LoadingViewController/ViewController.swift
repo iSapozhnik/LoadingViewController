@@ -19,8 +19,10 @@ class ViewController: LoadingViewController {
 		delay(1.0) { [weak self] in
 			self?.setVisibleScreen(.Loading)
 			self?.delay(3, closure: { [weak self] in
-				self?.errorTitle = "Lorem ipsum dolor sit amet, et nisl rebum viderer nam."
-				self?.errorMessage = "Ne laudem expetendis intellegam nec. Vel eu veritus omnesque, ei dolorem oporteat eos, admodum praesent te vix. Vel albucius oportere euripidis ne. Eum in timeam persius, no labore persequeris per, ea vix adhuc postulant."
+				let userInfo = [NSLocalizedDescriptionKey:NSLocalizedString("Operation was unsuccessful.", comment: ""), NSLocalizedFailureReasonErrorKey:NSLocalizedString("The operation timed out.", comment:""), NSLocalizedRecoverySuggestionErrorKey:NSLocalizedString("Have you tried turning it off and on again?", comment: "")]
+				let error = NSError(domain: "some doman", code: 1000, userInfo: userInfo)
+				self?.lastError = error
+				
 				self?.errorIcon = UIImage(named: "doc_fail")
 				self?.setVisibleScreen(.Failure)
 				self?.delay(2, closure: {
@@ -39,7 +41,7 @@ class ViewController: LoadingViewController {
     }
 
 	override func loadingViewStyle() -> LoadingViewStyle {
-		return .Multicolor
+		return .Stroke
 	}
 }
 

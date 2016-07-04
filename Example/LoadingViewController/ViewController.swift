@@ -41,7 +41,7 @@ class ViewController: LoadingViewController {
     }
 
 	override func loadingViewStyle() -> LoadingViewStyle {
-		return .Stroke
+		return .Indicator
 	}
 }
 

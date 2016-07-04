@@ -230,11 +230,14 @@ public class LoadingViewController: UIViewController {
 		performTransitionFromView(fromView as? UIView, toView: toView! as! UIView, animated: animated! as! Bool, contentType: ContentType(rawValue: contentType! as! Int)!)
 	}
 	
-	private func isContentViewAvailable(checkingView: UIView) -> Bool {
+	private func isContentViewAvailable(checkingView: UIView?) -> Bool {
 		
 		var result = false
+		if checkingView == nil {
+			return result
+		}
 	
-		let theView = checkingView
+		let theView = checkingView!
 		while let theViewUnw = theView.superview {
 			if theViewUnw == self.view { break }
 			if theViewUnw == self.contentView {
@@ -262,9 +265,11 @@ public class LoadingViewController: UIViewController {
 		}
 		
 		let theFromView = fromView
+		let theFromViewInConentView = isContentViewAvailable(theFromView)
 		let fromViewIsContentView = (theFromView == self.contentView)
 		
 		let theToView = toView
+		let theToViewInContentView = isContentViewAvailable(theToView)
 		let toViewIsContentView = (theToView == self.contentView)
 		
 		if fromViewIsContentView && toViewIsContentView {
@@ -272,9 +277,9 @@ public class LoadingViewController: UIViewController {
 			return
 		}
 		
-		let contentViewAlpha = (toViewIsContentView || fromViewIsContentView) ? 1.0 : 0.0
+		let contentViewAlpha = (theToViewInContentView || toViewIsContentView) ? 1.0 : 0.0
 		let removesFromView = !fromViewIsContentView
-		let animatesToView = (!fromViewIsContentView || !toViewIsContentView)
+		let animatesToView = (!theFromViewInConentView || !fromViewIsContentView)
 		let animatesFromView = !fromViewIsContentView
 		
 		func animations() {

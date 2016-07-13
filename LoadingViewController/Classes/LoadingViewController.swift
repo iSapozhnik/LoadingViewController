@@ -73,8 +73,9 @@ public class LoadingViewController: UIViewController {
 	//MARK:- Default views
 	
 	func defaultNoDataView() -> UIView {
-		//TODO: create default view for No Data
-		return UIView()
+		let view = NoDataView.viewWithStyle(noDataViewStyle())
+		view.message = noDataMessage
+		return view
 	}
 	
 	func defaultErrorView() -> UIView {
@@ -98,6 +99,10 @@ public class LoadingViewController: UIViewController {
 	}
 	
 	public func errorViewStyle() -> ErrorViewStyle {
+		return .Simple
+	}
+	
+	public func noDataViewStyle() -> NoDataViewStyle {
 		return .Simple
 	}
 

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SimpleNoDataView" customModule="LoadingViewController" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="317" height="490"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="be0-fe-St9">
+                    <rect key="frame" x="50" y="0.0" width="217" height="490"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="You don't have any results yet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="220" translatesAutoresizingMaskIntoConstraints="NO" id="TKv-NH-Fmk">
+                            <rect key="frame" x="0.0" y="160" width="217" height="38.5"/>
+                            <color key="backgroundColor" red="0.40784313729999999" green="0.41568627450000001" blue="0.50980392159999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" red="0.40784313729999999" green="0.41568627450000001" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="TKv-NH-Fmk" secondAttribute="bottom" constant="20" id="29L-7e-kf6"/>
+                        <constraint firstItem="TKv-NH-Fmk" firstAttribute="top" secondItem="be0-fe-St9" secondAttribute="top" constant="160" id="eUe-kz-WmZ"/>
+                        <constraint firstItem="TKv-NH-Fmk" firstAttribute="leading" secondItem="be0-fe-St9" secondAttribute="leading" id="rGn-Du-v8Q"/>
+                        <constraint firstAttribute="trailing" secondItem="TKv-NH-Fmk" secondAttribute="trailing" id="xOD-yQ-FCZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="be0-fe-St9" secondAttribute="bottom" id="dVn-P6-I67"/>
+                <constraint firstAttribute="trailing" secondItem="be0-fe-St9" secondAttribute="trailing" constant="50" id="t5h-0b-YZo"/>
+                <constraint firstItem="be0-fe-St9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yQW-CP-CVp"/>
+                <constraint firstItem="be0-fe-St9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="yez-nk-v47"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="messageLabel" destination="TKv-NH-Fmk" id="6Az-0l-es3"/>
+            </connections>
+            <point key="canvasLocation" x="69.5" y="265"/>
+        </view>
+    </objects>
+</document>

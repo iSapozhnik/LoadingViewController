@@ -19,18 +19,8 @@ class ViewController: LoadingViewController {
 		delay(1.0) { [weak self] in
 			self?.setVisibleScreen(.Loading)
 			self?.delay(3, closure: { [weak self] in
-				let userInfo = [NSLocalizedDescriptionKey:NSLocalizedString("Operation was unsuccessful.", comment: ""), NSLocalizedFailureReasonErrorKey:NSLocalizedString("The operation timed out.", comment:""), NSLocalizedRecoverySuggestionErrorKey:NSLocalizedString("Have you tried turning it off and on again?", comment: "")]
-				let error = NSError(domain: "some doman", code: 1000, userInfo: userInfo)
-				self?.lastError = error
-				
-				self?.errorIcon = UIImage(named: "doc_fail")
-				self?.setVisibleScreen(.Failure)
-				self?.delay(2, closure: {
-					self?.setVisibleScreen(.Loading)
-					self?.delay(2, closure: { [weak self] in
-						self?.setVisibleScreen(.Content)
-						})
-				})
+				self?.noDataMessage = "You don't have any search results. Please, refine your search criteria and try again."
+				self?.setVisibleScreen(.NoData)
 			})
 		}
     }

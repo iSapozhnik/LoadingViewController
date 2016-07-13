@@ -1,25 +1,17 @@
 //
-//  SimpleErrorView.swift
+//  SimpleNoDataView.swift
 //  Pods
 //
-//  Created by Sapozhnik Ivan on 29.06.16.
+//  Created by Sapozhnik Ivan on 13.07.16.
 //
 //
 
 import UIKit
 
-class SimpleErrorView: ErrorView {
+class SimpleNoDataView: NoDataView {
 
-	var view: UIView!
-	
-	@IBOutlet var titleLabel: UILabel!
 	@IBOutlet weak var imageView: UIImageView!
 	@IBOutlet var messageLabel: UILabel!
-	
-	override func didSetTitle() {
-		titleLabel?.text = title
-		layoutIfNeeded()
-	}
 	
 	override func didSetMessage() {
 		messageLabel?.text = message ?? ""
@@ -30,4 +22,5 @@ class SimpleErrorView: ErrorView {
 		guard let newImage = image else { return }
 		imageView?.image = newImage
 	}
+
 }

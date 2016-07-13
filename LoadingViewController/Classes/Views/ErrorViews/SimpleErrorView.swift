@@ -30,4 +30,8 @@ class SimpleErrorView: ErrorView {
 		guard let newImage = image else { return }
 		imageView?.image = newImage
 	}
+	
+	@IBAction func action(sender: AnyObject) {
+		action?()
+	}
 }

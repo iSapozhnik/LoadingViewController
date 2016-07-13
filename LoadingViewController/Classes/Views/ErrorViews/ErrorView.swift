@@ -32,7 +32,7 @@ class ErrorView: UIView {
 		}
 	}
 	
-	static func viewWithStyle(style: ErrorViewStyle, actionHandler:ActionHandler?) -> ErrorView {
+	static func viewWithStyle(style: ErrorViewStyle, actionHandler:ActionHandler? = nil) -> ErrorView {
 		
 		switch style {
 		case .Simple:

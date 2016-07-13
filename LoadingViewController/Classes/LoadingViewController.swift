@@ -63,10 +63,8 @@ public class LoadingViewController: UIViewController {
 		}
 	}
 	public var errorIcon: UIImage?
-	public var errorAction: String?
 	
-	var noDataAction: String?
-	public var noDataMessage: String = NSLocalizedString("No data availabel", comment: "")
+	public var noDataMessage: String = NSLocalizedString("No data available. Please, try another request.", comment: "")
 
 	var contentViewAllwaysAvailabel: Bool = false
 	
@@ -78,8 +76,8 @@ public class LoadingViewController: UIViewController {
 		return view
 	}
 	
-	func defaultErrorView() -> UIView {
-		let view = ErrorView.viewWithStyle(errorViewStyle(), actionHandler: nil)
+	func defaultErrorView(action: ActionHandler? = nil) -> UIView {
+		let view = ErrorView.viewWithStyle(errorViewStyle(), actionHandler: action)
 		view.title = errorTitle
 		view.message = errorMessage
 		view.image = errorIcon
@@ -127,12 +125,12 @@ public class LoadingViewController: UIViewController {
 		view.layoutIfNeeded()
 	}
 	
-	func viewForScreen(contentType: ContentType) -> UIView {
+	func viewForScreen(contentType: ContentType, action: ActionHandler? = nil) -> UIView {
 		switch contentType {
 		case .Content:
 			return contentView
 		case .Failure:
-			return defaultErrorView()
+			return defaultErrorView(action)
 		case .Loading:
 			return defaultLoadingView()
 		case .NoData:
@@ -145,10 +143,12 @@ public class LoadingViewController: UIViewController {
 	}
 	
 	// TODO: add ActionHandler support to handle 'Retry' tap on ErrorViews
+	
 	public func setVisibleScreen(contentType: ContentType, animated: Bool = true, actionHandler:ActionHandler? = nil) {
 		if visibleContentType != contentType {
 			visibleContentType = contentType
-			setActiveView(viewForScreen(visibleContentType), animated: animated)
+			let view = viewForScreen(visibleContentType, action: actionHandler)
+			setActiveView(view, animated: animated)
 		}
 	}
 

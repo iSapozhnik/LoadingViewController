@@ -37,6 +37,9 @@
                             <state key="highlighted">
                                 <color key="titleColor" red="0.24313725489999999" green="0.42352941179999998" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
+                            <connections>
+                                <action selector="action:" destination="iN0-l3-epB" eventType="touchUpInside" id="V8e-tp-Lzm"/>
+                            </connections>
                         </button>
                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="250" image="sad.png" translatesAutoresizingMaskIntoConstraints="NO" id="pyy-8x-tJd">
                             <rect key="frame" x="46" y="64" width="128" height="128"/>

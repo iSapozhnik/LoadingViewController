@@ -45,6 +45,10 @@ public class LoadingViewController: UIViewController {
 	@IBOutlet public var contentView: UIView!
 	
 	public var lastError: NSError?
+	var defaultLoadingColor = UIColor(colorLiteralRed: 250/255, green: 250/255, blue: 250/255, alpha: 1)
+	public var loadingViewColor: UIColor?
+	public var noDataViewColor: UIColor?
+	public var errorViewColor: UIColor?
 	
 	var visibleContentType: ContentType = .Undefined
 	var activeView: UIView?
@@ -72,12 +76,14 @@ public class LoadingViewController: UIViewController {
 	
 	func defaultNoDataView() -> UIView {
 		let view = NoDataView.viewWithStyle(noDataViewStyle())
+		view.backgroundColor = noDataViewColor ?? loadingViewColor
 		view.message = noDataMessage
 		return view
 	}
 	
 	func defaultErrorView(action: ActionHandler? = nil) -> UIView {
 		let view = ErrorView.viewWithStyle(errorViewStyle(), actionHandler: action)
+		view.backgroundColor = errorViewColor ?? loadingViewColor
 		view.title = errorTitle
 		view.message = errorMessage
 		view.image = errorIcon
@@ -86,6 +92,7 @@ public class LoadingViewController: UIViewController {
 	
 	func defaultLoadingView() -> UIView {
 		let view = LoadingView.viewWithStyle(loadingViewStyle())
+		view.backgroundColor = loadingViewColor ?? defaultLoadingColor
 		
 		//TODO: add title, background image, etc.
 		view.title = "Loading"

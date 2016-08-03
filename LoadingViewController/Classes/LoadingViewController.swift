@@ -56,14 +56,17 @@ public class LoadingViewController: UIViewController {
 	var animationQueue = Array<AnimationDict>()
 	var currentAnimation: AnimationDict?
 	
+	public var customErrorTitle: String?
+	public var customErrorMessage: String?
+	
 	public var errorTitle: String {
 		get {
-			return lastError?.localizedDescription ?? NSLocalizedString("Oops, something went wrong", comment: "")
+			return lastError?.localizedDescription ?? customErrorTitle ?? NSLocalizedString("Oops, something went wrong", comment: "")
 		}
 	}
 	public var errorMessage: String {
 		get {
-			return lastError?.localizedFailureReason ?? NSLocalizedString("Please try again later", comment: "")
+			return lastError?.localizedFailureReason ?? customErrorMessage ?? NSLocalizedString("Please try again later", comment: "")
 		}
 	}
 	public var errorIcon: UIImage?

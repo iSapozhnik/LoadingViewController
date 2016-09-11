@@ -73,6 +73,7 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="actionButton" destination="sNq-j4-dgH" id="c6N-et-Xy9"/>
                 <outlet property="imageView" destination="pyy-8x-tJd" id="CcE-BQ-SHz"/>
                 <outlet property="messageLabel" destination="bFX-MB-E6F" id="QhM-rg-P1s"/>
                 <outlet property="titleLabel" destination="gfN-0e-n0e" id="diR-Ym-7yZ"/>

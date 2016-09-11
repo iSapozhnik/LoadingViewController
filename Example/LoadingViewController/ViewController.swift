@@ -21,6 +21,7 @@ class ViewController: LoadingViewController {
 			self?.delay(3, closure: { [weak self] in
 				self?.noDataMessage = "You don't have any search results. Please, refine your search criteria and try again."
 				self?.customErrorTitle = "Hello World!"
+				self?.errorActionTitle = "Oops!"
 				self?.setVisibleScreen(.Failure, actionHandler: {
 					
 				})

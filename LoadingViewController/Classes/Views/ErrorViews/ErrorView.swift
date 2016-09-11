@@ -31,6 +31,11 @@ class ErrorView: UIView {
 			didSetImage()
 		}
 	}
+	var actionTitle: String? {
+		didSet {
+			didSetActionTitle()
+		}
+	}
 	
 	static func viewWithStyle(style: ErrorViewStyle, actionHandler:ActionHandler? = nil) -> ErrorView {
 		
@@ -46,4 +51,5 @@ class ErrorView: UIView {
 	func didSetMessage() {}
 	func didSetImage() {}
 	func didSetAction() {}
+	func didSetActionTitle() {}
 }

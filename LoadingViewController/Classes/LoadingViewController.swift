@@ -49,6 +49,7 @@ public class LoadingViewController: UIViewController {
 	public var loadingViewColor: UIColor?
 	public var noDataViewColor: UIColor?
 	public var errorViewColor: UIColor?
+	public var errorActionTitle: String? = NSLocalizedString("Try again", comment: "")
 	
 	var visibleContentType: ContentType = .Undefined
 	var activeView: UIView?
@@ -90,6 +91,7 @@ public class LoadingViewController: UIViewController {
 		view.title = errorTitle
 		view.message = errorMessage
 		view.image = errorIcon
+		view.actionTitle = errorActionTitle
 		return view
 	}
 	

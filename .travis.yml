@@ -4,11 +4,16 @@
 
 osx_image: xcode8.3
 language: objective-c
+
+branches:
+  only:
+    - master
+
 # cache: cocoapods
 # podfile: Example/Podfile
 # before_install:
 # - gem install cocoapods # Since Travis is not always on latest version
 # - pod install --project-directory=Example
 script:
-- set -o pipefail && xcodebuild test -workspace Example/LoadingViewController.xcworkspace -scheme LoadingViewController-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
+- set -o pipefail && xcodebuild test -workspace Example/LoadingViewController.xcworkspace -scheme LoadingViewController-Example -destination="OS=10.3,name=iPhone 7 Plus" ONLY_ACTIVE_ARCH=NO | xcpretty
 - pod lib lint

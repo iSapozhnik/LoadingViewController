@@ -11,13 +11,9 @@ import UIKit
 // This extension should be used for testing purposes
 
 extension UIViewController {
-	public func delay(delay:Double, closure:()->()) {
-		dispatch_after(
-			dispatch_time(
-				DISPATCH_TIME_NOW,
-				Int64(delay * Double(NSEC_PER_SEC))
-			),
-			dispatch_get_main_queue(), closure)
+	public func delay(_ delay:Double, closure:@escaping ()->()) {
+		DispatchQueue.main.asyncAfter(
+			deadline: DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: closure)
 	}
 }
 
@@ -34,22 +30,22 @@ let FromViewKey = "fromView"
 let ToViewKey = "toView"
 let AnimatedKey = "animated"
 let ScreenKey = "screen"
-let animationDuration: NSTimeInterval = 0.3;
+let animationDuration: TimeInterval = 0.3;
 
 
 typealias AnimationDict = Dictionary<String, AnyObject>
 public typealias ActionHandler = () -> ()
 
-public class LoadingViewController: UIViewController {
+open class LoadingViewController: UIViewController {
 
-	@IBOutlet public var contentView: UIView!
+	@IBOutlet open var contentView: UIView!
 	
-	public var lastError: NSError?
+	open var lastError: NSError?
 	var defaultLoadingColor = UIColor(colorLiteralRed: 250/255, green: 250/255, blue: 250/255, alpha: 1)
-	public var loadingViewColor: UIColor?
-	public var noDataViewColor: UIColor?
-	public var errorViewColor: UIColor?
-	public var errorActionTitle: String? = NSLocalizedString("Try again", comment: "")
+	open var loadingViewColor: UIColor?
+	open var NoDataViewColor: UIColor?
+	open var errorViewColor: UIColor?
+	open var errorActionTitle: String? = NSLocalizedString("Try again", comment: "")
 	
 	var visibleContentType: ContentType = .Undefined
 	var activeView: UIView?
@@ -57,35 +53,35 @@ public class LoadingViewController: UIViewController {
 	var animationQueue = Array<AnimationDict>()
 	var currentAnimation: AnimationDict?
 	
-	public var customErrorTitle: String?
-	public var customErrorMessage: String?
+	open var customErrorTitle: String?
+	open var customErrorMessage: String?
 	
-	public var errorTitle: String {
+	open var errorTitle: String {
 		get {
 			return lastError?.localizedDescription ?? customErrorTitle ?? NSLocalizedString("Oops, something went wrong", comment: "")
 		}
 	}
-	public var errorMessage: String {
+	open var errorMessage: String {
 		get {
 			return lastError?.localizedFailureReason ?? customErrorMessage ?? NSLocalizedString("Please try again later", comment: "")
 		}
 	}
-	public var errorIcon: UIImage?
+	open var errorIcon: UIImage?
 	
-	public var noDataMessage: String = NSLocalizedString("No data available. Please, try another request.", comment: "")
+	open var NoDataMessage: String = NSLocalizedString("No data available. Please, try another request.", comment: "")
 
 	var contentViewAllwaysAvailabel: Bool = false
 	
 	//MARK:- Default views
 	
 	func defaultNoDataView() -> UIView {
-		let view = NoDataView.viewWithStyle(noDataViewStyle())
-		view.backgroundColor = noDataViewColor ?? loadingViewColor
-		view.message = noDataMessage
+		let view = NoDataView.viewWithStyle(NoDataViewStyle())
+		view.backgroundColor = NoDataViewColor ?? loadingViewColor
+		view.message = NoDataMessage
 		return view
 	}
 	
-	func defaultErrorView(action: ActionHandler? = nil) -> UIView {
+	func defaultErrorView(_ action: ActionHandler? = nil) -> UIView {
 		let view = ErrorView.viewWithStyle(errorViewStyle(), actionHandler: action)
 		view.backgroundColor = errorViewColor ?? loadingViewColor
 		view.title = errorTitle
@@ -104,40 +100,40 @@ public class LoadingViewController: UIViewController {
 		return view
 	}
 	
-	public func loadingViewStyle() -> LoadingViewStyle {
-		return .Indicator
+	open func loadingViewStyle() -> LoadingViewStyle {
+		return .indicator
 	}
 	
-	public func errorViewStyle() -> ErrorViewStyle {
-		return .Simple
+	open func errorViewStyle() -> ErrorViewStyle {
+		return .simple
 	}
 	
-	public func noDataViewStyle() -> NoDataViewStyle {
-		return .Simple
+	open func NoDataViewStyle() -> NoDataViewStyle {
+		return .simple
 	}
 
-	public func showsErrorView() -> Bool {
+	open func showsErrorView() -> Bool {
 		return true
 	}
 	
-	public func showsNoDataView() -> Bool {
+	open func showsNoDataView() -> Bool {
 		return true
 	}
 	
-	public func showsLoadingView() -> Bool {
+	open func showsLoadingView() -> Bool {
 		return true
 	}
 	
-	func addView(viewToAdd: UIView) {
+	func addView(_ viewToAdd: UIView) {
 		view.addSubview(viewToAdd)
 		viewToAdd.translatesAutoresizingMaskIntoConstraints = false
 		let bindings = ["view": viewToAdd]
-		view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("|[view]|", options: [.AlignAllLeading, .AlignAllTrailing], metrics: nil, views: bindings))
-		view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[view]|", options: [.AlignAllTop, .AlignAllBottom], metrics: nil, views: bindings))
+		view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "|[view]|", options: [.alignAllLeading, .alignAllTrailing], metrics: nil, views: bindings))
+		view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[view]|", options: [.alignAllTop, .alignAllBottom], metrics: nil, views: bindings))
 		view.layoutIfNeeded()
 	}
 	
-	func viewForScreen(contentType: ContentType, action: ActionHandler? = nil) -> UIView {
+	func viewForScreen(_ contentType: ContentType, action: ActionHandler? = nil) -> UIView {
 		switch contentType {
 		case .Content:
 			return contentView
@@ -149,14 +145,14 @@ public class LoadingViewController: UIViewController {
 			return defaultNoDataView()
 		case .Undefined, .Empty:
 			let result = UIView()
-			result.backgroundColor = .redColor()
+			result.backgroundColor = .red
 			return result
 		}
 	}
 	
 	// TODO: add ActionHandler support to handle 'Retry' tap on ErrorViews
 	
-	public func setVisibleScreen(contentType: ContentType, animated: Bool = true, actionHandler:ActionHandler? = nil) {
+	open func setVisibleScreen(_ contentType: ContentType, animated: Bool = true, actionHandler:ActionHandler? = nil) {
 		if visibleContentType != contentType {
 			visibleContentType = contentType
 			let view = viewForScreen(visibleContentType, action: actionHandler)
@@ -164,7 +160,7 @@ public class LoadingViewController: UIViewController {
 		}
 	}
 
-	func setActiveView(viewToSet: UIView, animated: Bool) {
+	func setActiveView(_ viewToSet: UIView, animated: Bool) {
 		if viewToSet != activeView {
 			let oldView = activeView ?? nil
 			activeView = viewToSet
@@ -179,16 +175,16 @@ public class LoadingViewController: UIViewController {
 		}
 	}
 	
-	private func animationFormView(fromView: UIView?, toView: UIView, contentType: ContentType, animated: Bool) -> AnimationDict {
+	fileprivate func animationFormView(_ fromView: UIView?, toView: UIView, contentType: ContentType, animated: Bool) -> AnimationDict {
 		var data = AnimationDict()
 		data[FromViewKey] = fromView
 		data[ToViewKey] = toView
-		data[AnimatedKey] = animated
-		data[ScreenKey] = contentType.rawValue
+		data[AnimatedKey] = animated as AnyObject
+		data[ScreenKey] = contentType.rawValue as AnyObject
 		return data
 	}
 	
-	private func mergedAnimation(animation1: AnimationDict, animation2: AnimationDict) -> AnimationDict {
+	fileprivate func mergedAnimation(_ animation1: AnimationDict, animation2: AnimationDict) -> AnimationDict {
 		var result: AnimationDict = [:]
 		
 		let fromView = animation1[FromViewKey]
@@ -211,13 +207,13 @@ public class LoadingViewController: UIViewController {
 		return result
 	}
 	
-	private func addAnimation(animation: AnimationDict) {
+	fileprivate func addAnimation(_ animation: AnimationDict) {
 		if animationQueue.count > 0 {
 			let animationFromQueue = animationQueue.first!
 			animationQueue.removeAll()
 			animationQueue.append(mergedAnimation(animationFromQueue, animation2: animation))
 		} else {
-			animationQueue.insert(animation, atIndex: 0)
+			animationQueue.insert(animation, at: 0)
 		}
 		
 		delay(0.0) {
@@ -225,19 +221,19 @@ public class LoadingViewController: UIViewController {
 		}
 	}
 	
-	private func cancellAllAnimations() {
+	fileprivate func cancellAllAnimations() {
 		animationQueue.removeAll()
 		currentAnimation = nil
 	}
 	
-	private func performAnimation(animation: AnimationDict) {
+	fileprivate func performAnimation(_ animation: AnimationDict) {
 		let fromView = animation[FromViewKey]
 		let toView = animation[ToViewKey]
 		let contentType = animation[ScreenKey]
 		let animated = animation[AnimatedKey]
 		
 		if (animated as? Bool) != true {
-			for queueAnimation in animationQueue.reverse() {
+			for queueAnimation in animationQueue.reversed() {
 				let fromView = queueAnimation[FromViewKey]
 				let toView = queueAnimation[ToViewKey]
 				let contentType = queueAnimation[ScreenKey]
@@ -247,7 +243,7 @@ public class LoadingViewController: UIViewController {
 		performTransitionFromView(fromView as? UIView, toView: toView! as! UIView, animated: animated! as! Bool, contentType: ContentType(rawValue: contentType! as! Int)!)
 	}
 	
-	private func isContentViewAvailable(checkingView: UIView?) -> Bool {
+	fileprivate func isContentViewAvailable(_ checkingView: UIView?) -> Bool {
 		
 		var result = false
 		if checkingView == nil {
@@ -266,11 +262,11 @@ public class LoadingViewController: UIViewController {
 		return result
 	}
 	
-	private func animationOptions() -> UIViewAnimationOptions {
-		return [.TransitionCrossDissolve, .LayoutSubviews, .CurveEaseInOut]
+	fileprivate func animationOptions() -> UIViewAnimationOptions {
+		return [.transitionCrossDissolve, .layoutSubviews]
 	}
 	
-	private func performTransitionFromView(fromView: UIView?, toView: UIView, animated: Bool, contentType: ContentType) {
+	fileprivate func performTransitionFromView(_ fromView: UIView?, toView: UIView, animated: Bool, contentType: ContentType) {
 		
 		func finish() {
 			currentAnimation = nil
@@ -322,7 +318,7 @@ public class LoadingViewController: UIViewController {
 		
 		if animated {
 			theToView.alpha = 0.0
-			UIView.animateWithDuration(animationDuration, delay: 0.0, options: animationOptions(), animations: {
+			UIView.animate(withDuration: animationDuration, delay: 0.0, options: animationOptions(), animations: {
 				animations()
 				}, completion: { finished in
 					if finished {
@@ -335,7 +331,7 @@ public class LoadingViewController: UIViewController {
 		}
 	}
 	
-	private func startNextAnimationIfNeeded() {
+	fileprivate func startNextAnimationIfNeeded() {
 		guard self.currentAnimation == nil else { return }
 		guard let lastAnimation = animationQueue.last else { return }
 		

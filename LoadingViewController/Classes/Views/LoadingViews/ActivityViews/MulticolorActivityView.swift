@@ -11,15 +11,15 @@ import UIKit
 class MulticolorActivityView: UIView {
 	
 	let defaultLineWidth: CGFloat = 2.0
-	let defaultColor = UIColor.orangeColor()
+	let defaultColor = UIColor.orange
 	let defaultRoundTime = 1.5
 	
-	var colorArray = [UIColor.greenColor(), UIColor.redColor(), UIColor.blueColor(), UIColor.purpleColor(),]
+	var colorArray = [UIColor.green, UIColor.red, UIColor.blue, UIColor.purple,]
 	
-	private var circleLayer = CAShapeLayer()
-	private var strokeLineAnimation = CAAnimationGroup()
-	private let rotationAnimation = CABasicAnimation(keyPath: "transform.rotation")
-	private let strokeColorAnimation = CAKeyframeAnimation(keyPath: "strokeColor")
+	fileprivate var circleLayer = CAShapeLayer()
+	fileprivate var strokeLineAnimation = CAAnimationGroup()
+	fileprivate let rotationAnimation = CABasicAnimation(keyPath: "transform.rotation")
+	fileprivate let strokeColorAnimation = CAKeyframeAnimation(keyPath: "strokeColor")
 	
 	override init(frame: CGRect) {
 		super.init(frame: frame)
@@ -34,22 +34,22 @@ class MulticolorActivityView: UIView {
 	// MARK:- Public
 	
 	func startAnimating() {
-		circleLayer.addAnimation(strokeLineAnimation, forKey: "strokeLineAnimation")
-		circleLayer.addAnimation(rotationAnimation, forKey: "rotationAnimation")
-		circleLayer.addAnimation(strokeColorAnimation, forKey: "strokeColorAnimation")
+		circleLayer.add(strokeLineAnimation, forKey: "strokeLineAnimation")
+		circleLayer.add(rotationAnimation, forKey: "rotationAnimation")
+		circleLayer.add(strokeColorAnimation, forKey: "strokeColorAnimation")
 	}
 	
 	func stopAnimating() {
-		circleLayer.removeAnimationForKey("strokeLineAnimation")
-		circleLayer.removeAnimationForKey("rotationAnimation")
-		circleLayer.removeAnimationForKey("strokeColorAnimation")
+		circleLayer.removeAnimation(forKey: "strokeLineAnimation")
+		circleLayer.removeAnimation(forKey: "rotationAnimation")
+		circleLayer.removeAnimation(forKey: "strokeColorAnimation")
 	}
 	
 	// MARK:- Private
 	
-	private func initialSetup() {
+	fileprivate func initialSetup() {
 		self.layer.addSublayer(circleLayer)
-		backgroundColor = .clearColor()
+		backgroundColor = .clear
 		circleLayer.fillColor = nil
 		circleLayer.lineWidth = defaultLineWidth
 		circleLayer.lineCap = "round"
@@ -57,7 +57,7 @@ class MulticolorActivityView: UIView {
 		updateAnimations()
 	}
 	
-	private func updateAnimations() {
+	fileprivate func updateAnimations() {
 		
 		// Stroke head
 		let headAnimation = CABasicAnimation(keyPath: "strokeStart")
@@ -81,30 +81,30 @@ class MulticolorActivityView: UIView {
 		
 		// Rotation
 		rotationAnimation.fromValue = 0
-		rotationAnimation.toValue = 2 * M_PI
+		rotationAnimation.toValue = 2 * Double.pi
 		rotationAnimation.duration = defaultRoundTime
 		rotationAnimation.repeatCount = Float.infinity
 		
 		// Color animation
-		strokeColorAnimation.values = colorArray.map({$0.CGColor})
-		strokeColorAnimation.keyTimes = keyTimes()
+		strokeColorAnimation.values = colorArray.map({$0.cgColor})
+		strokeColorAnimation.keyTimes = keyTimes() as [NSNumber]
 		strokeColorAnimation.calculationMode = kCAAnimationDiscrete;
 		strokeColorAnimation.duration = Double(colorArray.count) * defaultRoundTime
 		strokeColorAnimation.repeatCount = Float.infinity
 	}
 	
-	private func colorValues() -> [CGColor] {
+	fileprivate func colorValues() -> [CGColor] {
 		var colors: [CGColor] = []
 		for color in colorArray {
-			colors.append(color.CGColor)
+			colors.append(color.cgColor)
 		}
 		return colors
 	}
 	
-	private func keyTimes() -> Array<Double> {
+	fileprivate func keyTimes() -> Array<Double> {
 		var array: Array<Double> = []
 		
-		for (index, _) in colorArray.enumerate() {
+		for (index, _) in colorArray.enumerated() {
 			array.append(Double(index)/Double(colorArray.count))
 		}
 		array.append(1.0)
@@ -116,13 +116,13 @@ class MulticolorActivityView: UIView {
 	override func layoutSubviews() {
 		super.layoutSubviews()
 		
-		let center = CGPointMake(CGRectGetMidX(bounds), CGRectGetMidY(bounds))
+		let center = CGPoint(x: bounds.midX, y: bounds.midY)
 		let radius = min(self.bounds.size.width, self.bounds.size.height) / 2.0 - circleLayer.lineWidth / 2.0
 		let startAngle = 0.0 as CGFloat
-		let endAngle = CGFloat(2 * M_PI)
+		let endAngle = CGFloat(2 * Double.pi)
 		
 		let path = UIBezierPath(arcCenter: center, radius: radius, startAngle: startAngle, endAngle: endAngle, clockwise: true)
-		circleLayer.path = path.CGPath
+		circleLayer.path = path.cgPath
 		circleLayer.frame = bounds
 	}
 	

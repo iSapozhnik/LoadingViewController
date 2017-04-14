@@ -34,10 +34,10 @@ class SimpleErrorView: ErrorView {
 	
 	override func didSetActionTitle() {
 		guard let newTitle = actionTitle else { return }
-		actionButton.setTitle(newTitle, forState: .Normal)
+		actionButton.setTitle(newTitle, for: UIControlState())
 	}
 	
-	@IBAction func action(sender: AnyObject) {
+	@IBAction func action(_ sender: AnyObject) {
 		action?()
 	}
 }

@@ -10,28 +10,28 @@ import UIKit
 
 class StrokeActivityView: UIView {
 
-	static let defaultColor = UIColor.lightGrayColor()
+	static let defaultColor = UIColor.lightGray
 	static let defaultLineWidth: CGFloat = 2.0
 	static let defaultCircleTime: Double = 1.5
 	
-	private var strokeAnimation: CAAnimationGroup {
+	fileprivate var strokeAnimation: CAAnimationGroup {
 		get {
 			return generateAnimation()
 		}
 	}
 	
-	private var rotationAnimation: CABasicAnimation {
+	fileprivate var rotationAnimation: CABasicAnimation {
 		get {
 			return generateRotationAnimation()
 		}
 	}
 	
-	private var circleLayer: CAShapeLayer = CAShapeLayer()
+	fileprivate var circleLayer: CAShapeLayer = CAShapeLayer()
 	
 	@IBInspectable
-	var strokeColor: UIColor = UIColor.lightGrayColor() {
+	var strokeColor: UIColor = UIColor.lightGray {
 		didSet {
-			circleLayer.strokeColor = strokeColor.CGColor
+			circleLayer.strokeColor = strokeColor.cgColor
 		}
 	}
 	
@@ -106,7 +106,7 @@ class StrokeActivityView: UIView {
 	func generateRotationAnimation() -> CABasicAnimation {
 		let animation = CABasicAnimation(keyPath: "transform.rotation")
 		animation.fromValue = 0
-		animation.toValue = 2*M_PI
+		animation.toValue = 2 * Double.pi
 		animation.duration = self.circleTime
 		animation.repeatCount = Float.infinity
 		return animation
@@ -114,11 +114,11 @@ class StrokeActivityView: UIView {
 	
 	func setupView() {
 		layer.addSublayer(self.circleLayer)
-		backgroundColor = UIColor.clearColor()
+		backgroundColor = UIColor.clear
 		circleLayer.fillColor = nil
 		circleLayer.lineWidth = lineWidth
 		circleLayer.lineCap = kCALineCapRound
-		circleLayer.strokeColor = strokeColor.CGColor
+		circleLayer.strokeColor = strokeColor.cgColor
 		updateAnimation()
 	}
 	
@@ -126,17 +126,17 @@ class StrokeActivityView: UIView {
 		super.layoutSubviews()
 		let center = CGPoint(x: bounds.size.width/2.0, y: bounds.size.height/2.0)
 		let radius = min(bounds.size.width, bounds.size.height)/2.0 - circleLayer.lineWidth/2.0
-		let endAngle = CGFloat(2*M_PI)
+		let endAngle = CGFloat(2 * Double.pi)
 		let path = UIBezierPath(arcCenter: center, radius: radius, startAngle: 0, endAngle: endAngle, clockwise: true)
-		circleLayer.path = path.CGPath
+		circleLayer.path = path.cgPath
 		circleLayer.frame = bounds
 		
 	}
 	
 	func updateAnimation() {
 		if animating {
-			circleLayer.addAnimation(strokeAnimation, forKey: "strokeLineAnimation")
-			circleLayer.addAnimation(rotationAnimation, forKey: "rotationAnimation")
+			circleLayer.add(strokeAnimation, forKey: "strokeLineAnimation")
+			circleLayer.add(rotationAnimation, forKey: "rotationAnimation")
 		} else {
 			circleLayer.removeAllAnimations()
 		}

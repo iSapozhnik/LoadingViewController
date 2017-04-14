@@ -9,7 +9,7 @@
 import UIKit
 
 public enum ErrorViewStyle {
-	case Simple
+	case simple
 }
 
 class ErrorView: UIView {
@@ -37,10 +37,10 @@ class ErrorView: UIView {
 		}
 	}
 	
-	static func viewWithStyle(style: ErrorViewStyle, actionHandler:ActionHandler? = nil) -> ErrorView {
+	static func viewWithStyle(_ style: ErrorViewStyle, actionHandler:ActionHandler? = nil) -> ErrorView {
 		
 		switch style {
-		case .Simple:
+		case .simple:
 			let errorView = SimpleErrorView.loadFromNib()
 			errorView.action = actionHandler
 			return errorView

@@ -9,7 +9,7 @@
 import UIKit
 
 public enum NoDataViewStyle {
-	case Simple
+	case simple
 }
 
 class NoDataView: UIView {
@@ -30,10 +30,10 @@ class NoDataView: UIView {
 		}
 	}
 	
-	static func viewWithStyle(style: NoDataViewStyle) -> NoDataView {
+	static func viewWithStyle(_ style: NoDataViewStyle) -> NoDataView {
 		
 		switch style {
-		case .Simple:
+		case .simple:
 			let errorView = SimpleNoDataView.loadFromNib()
 			return errorView
 		}

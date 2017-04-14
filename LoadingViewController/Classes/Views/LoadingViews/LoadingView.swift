@@ -14,10 +14,10 @@ protocol Animatable {
 }
 
 public enum LoadingViewStyle {
-	case Indicator
-	case Stroke
-	case Multicolor
-	case Custom
+	case indicator
+	case stroke
+	case multicolor
+	case custom
 }
 
 class LoadingView: UIView {
@@ -33,19 +33,19 @@ class LoadingView: UIView {
 		}
 	}
 	
-	static func viewWithStyle(style: LoadingViewStyle) -> LoadingView {
+	static func viewWithStyle(_ style: LoadingViewStyle) -> LoadingView {
 		switch style {
-		case .Indicator:
-			return IndicatorLoadingView(style: .SmallTitle)
-		case .Stroke:
+		case .indicator:
+			return IndicatorLoadingView(style: .smallTitle)
+		case .stroke:
 			let loadingView = StrokeLoadingView()
 			loadingView.startAnimating()
 			return loadingView
-		case .Multicolor:
+		case .multicolor:
 			let loadingView = MulticolorLoadingView()
 			loadingView.startAnimating()
 			return loadingView
-		case .Custom:
+		case .custom:
 			//TODO: fix this
 			return UIView() as! LoadingView
 		}

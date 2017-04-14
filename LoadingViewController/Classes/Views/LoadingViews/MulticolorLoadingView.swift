@@ -22,22 +22,22 @@ class MulticolorLoadingView: LoadingView, Animatable {
 		defaultInitializer()
 	}
 	
-	private func defaultInitializer() {
-		let size = CGSizeMake(34, 34)
-		activity.frame = CGRectMake(0, 0, size.width, size.height)
+	fileprivate func defaultInitializer() {
+		let size = CGSize(width: 34, height: 34)
+		activity.frame = CGRect(x: 0, y: 0, width: size.width, height: size.height)
 		addSubview(activity)
 	}
 	
 	override func layoutSubviews() {
 		super.layoutSubviews()
-		activity.center = CGPointMake(CGRectGetMidX(bounds), CGRectGetMidY(bounds))
+		activity.center = CGPoint(x: bounds.midX, y: bounds.midY)
 	}
 	
 	func startAnimating() {
 		
 		let delay = 0.0 * Double(NSEC_PER_SEC)
-		let time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
-		dispatch_after(time, dispatch_get_main_queue(), {
+		let time = DispatchTime.now() + Double(Int64(delay)) / Double(NSEC_PER_SEC)
+		DispatchQueue.main.asyncAfter(deadline: time, execute: {
 			self.activity.startAnimating()
 		})
 		
